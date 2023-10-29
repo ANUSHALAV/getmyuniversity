@@ -1,0 +1,949 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from www.getmyuniversity.com/public/medical-colleges-in-andhra-pradesh by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Sep 2023 12:27:15 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <meta name="title" content="">
+    <meta name="keyword" content="">
+    <meta name="description" content="">
+    <meta name="author" content="info@getmyuniversity.com">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="medical-colleges-in-andhra-pradesh.html">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image"
+        content="https://www.getmyuniversity.com/public/images/country_images/large/andhra pradhes.jpg-88394_1.jpg">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="medical-colleges-in-andhra-pradesh.html">
+    <meta property="twitter:title" content="">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image"
+        content="https://www.getmyuniversity.com/public/images/country_images/large/andhra pradhes.jpg-88394_1.jpg">
+    <script
+        type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","url":"https://www.getmyuniversity.com","logo":"https://www.getmyuniversity.com/images/logo.png","name":"getmyuniversity Consultants","sameAs":["https://www.facebook.com/getmyuniversityConsultantsManagementServicesPvtLtd/","https://twitter.com/jag_vimal"]}</script>
+    <script
+        type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","name":"getmyuniversity Consultants","alternateName":"","url":"https://www.getmyuniversity.com","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.getmyuniversity.com/abroad/?q={search_term}"},"query-input":{"@type":"PropertyValueSpecification","valueName":"search_term","valueRequired":"http://schema.org/True"}}}</script>
+    <link rel="canonical" href="medical-colleges-in-andhra-pradesh.html">
+    <link rel="preload" href="css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+    </noscript>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" media="all">
+
+    <!--Favicon-->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="public/images/favicon/apple-touch-icon.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8NBEX89NHQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-8NBEX89NHQ');
+    </script>
+</head>
+
+<body>
+    <?php
+    include "../Components/Navbar.php";
+    ?>
+    <section class="uniHero_wrapper text-white">
+        <div class="bg_img">
+            <img scc="" alt="Andhra Pradesh" width="1907" height="513">
+        </div>
+        <div class="inner_wrapper">
+            <div class="container">
+                <ul class="breadcrumb_bar list-unstyled inline mb-2">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item">Andhra Pradesh</li>
+                </ul>
+                <h1>Andhra Pradesh</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="uniList_wrapper section-padding pt-5">
+        <div class="container">
+            <div class="statusBar d-flex align-items-center justify-content-between mb-3">
+                <button class="filter_openBtn  d-lg-none btn theme-btn">Filter</button>
+            </div>
+            <div class="row">
+                <div class="sidebarColumn col-lg-4">
+                    <button class="filter_closeBtn d-lg-none"></button>
+                    <div class="filter_sidebar">
+                        <div class="headBar d-flex align-items-center justify-content-between pb-3 mb-4 border-bottom">
+                            <h2>Filter By</h2>
+                            <a class="btn clearFilter">Clear Filter</a>
+                        </div>
+                        <div class="filter_box">
+                            <h3>State</h3>
+                            <div class="form-input">
+                                <input class="keyword" type="text">
+                                <button class="search-button"><i class="fa fa-search"></i></button>
+                            </div>
+                            <div class="addto-playlists filter_list">
+                                <ul>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio"
+                                                class="stateFilter" />Karnataka</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="pondicherry"
+                                                class="stateFilter" />Pondicherry</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="jammu-kashmir"
+                                                class="stateFilter" />Jammu & Kashmir</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="maharashtra"
+                                                class="stateFilter" />Maharashtra</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="tamil-nadu"
+                                                class="stateFilter" />Tamil Nadu</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="andhra-pradesh"
+                                                class="stateFilter" checked />Andhra Pradesh</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="punjab"
+                                                class="stateFilter" />Punjab</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="haryana"
+                                                class="stateFilter" />Haryana</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="gujarat"
+                                                class="stateFilter" />Gujarat</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="kerala"
+                                                class="stateFilter" />Kerala</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="madhya-pradesh"
+                                                class="stateFilter" />Madhya Pradesh</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="orissa"
+                                                class="stateFilter" />Orissa</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="telangana"
+                                                class="stateFilter" />Telangana</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="jharkhand"
+                                                class="stateFilter" />Jharkhand</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="uttar-pradesh"
+                                                class="stateFilter" />Uttar Pradesh</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="rajasthan"
+                                                class="stateFilter" />Rajasthan</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="west-bengal"
+                                                class="stateFilter" />West Bengal</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="delhi"
+                                                class="stateFilter" />Delhi</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="bihar"
+                                                class="stateFilter" />Bihar</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="chattisgarh"
+                                                class="stateFilter" />Chattisgarh</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="uttarakhand"
+                                                class="stateFilter" />Uttarakhand</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio"
+                                                data-val="andaman-nicobar-islands" class="stateFilter" />Andaman Nicobar
+                                            Islands</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="assam"
+                                                class="stateFilter" />Assam</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio"
+                                                data-val="himachal-pradesh" class="stateFilter" />Himachal
+                                            Pradesh</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="goa"
+                                                class="stateFilter" />Goa</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="chandigarh"
+                                                class="stateFilter" />Chandigarh</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="manipur"
+                                                class="stateFilter" />manipur</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="meghalaya"
+                                                class="stateFilter" />Meghalaya</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio"
+                                                data-val="dadra-and-nagar-haveli" class="stateFilter" />Dadra and Nagar
+                                            Haveli</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="sikkim"
+                                                class="stateFilter" />Sikkim</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio"
+                                                data-val="arunachal-pradesh" class="stateFilter" />Arunachal
+                                            Pradesh</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="mizoram"
+                                                class="stateFilter" />Mizoram</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="mbbs-in-china"
+                                                class="stateFilter" />MBBS in China</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="MBBS-in-Georgia"
+                                                class="stateFilter" />MBBS in Georgia</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio"
+                                                data-val="mbbs-in-uzbekistan" class="stateFilter" />MBBS in
+                                            Uzbekistan</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio"
+                                                data-val="mbbs-in-bangladesh" class="stateFilter" />MBBS In
+                                            Bangladesh</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="mbbs-in-nepal"
+                                                class="stateFilter" />MBBS In Nepal</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio"
+                                                data-val="mbbs-in-kazakhstan" class="stateFilter" />MBBS In
+                                            Kazakhstan</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio"
+                                                data-val="mbbs-in-kyrgyzstan" class="stateFilter" />MBBS In
+                                            Kyrgyzstan</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="mbbs-in-russia"
+                                                class="stateFilter" />MBBS In Russia</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="mbbs-in-italy"
+                                                class="stateFilter" />MBBS In Italy</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio" data-val="mbbs-in-germany"
+                                                class="stateFilter" />MBBS In Germany</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="radio"
+                                                data-val="MBBS-in-Philippines" class="stateFilter" />MBBS in
+                                            Philippines</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="filter_box">
+                            <h3>City</h3>
+                            <div class="searchBox">
+                                <input class="form-control keyword1" placeholder="Search by City" type="text" />
+                            </div>
+                            <div class="filter_list addto-playlists1">
+                                <ul>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="checkbox" name="city"
+                                                class="cityFilter" value="nellore" />Nellore</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="checkbox" name="city"
+                                                class="cityFilter" value="mangalagiri" />Mangalagiri</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="checkbox" name="city"
+                                                class="cityFilter" value="eluru" />Eluru</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="checkbox" name="city"
+                                                class="cityFilter" value="vizag" />Vizag</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="checkbox" name="city"
+                                                class="cityFilter" value="chittoor" />Chittoor</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="checkbox" name="city"
+                                                class="cityFilter" value="chinoutpalli" />Chinoutpalli</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="checkbox" name="city"
+                                                class="cityFilter" value="kadapa" />Kadapa</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="checkbox" name="city"
+                                                class="cityFilter" value="visakhapatnam" />Visakhapatnam</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="checkbox" name="city"
+                                                class="cityFilter" value="ananthapuram" />Ananthapuram</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="checkbox" name="city"
+                                                class="cityFilter" value="vijayawada" />Vijayawada</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="checkbox" name="city"
+                                                class="cityFilter" value="srikakulam" />Srikakulam</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="checkbox" name="city"
+                                                class="cityFilter" value="rajahmundry" />Rajahmundry</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="checkbox" name="city"
+                                                class="cityFilter" value="guntur" />Guntur</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="checkbox" name="city"
+                                                class="cityFilter" value="amalapuram" />Amalapuram</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="checkbox" name="city"
+                                                class="cityFilter" value="kurnool" />Kurnool</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="checkbox" name="city"
+                                                class="cityFilter" value="vizianagaram" />Vizianagaram</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="checkbox" name="city"
+                                                class="cityFilter" value="krishna-dist" />Krishna Dist</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="checkbox" name="city"
+                                                class="cityFilter" value="kuppam" />Kuppam</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="checkbox" name="city"
+                                                class="cityFilter" value="ongole" />Ongole</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="checkbox" name="city"
+                                                class="cityFilter" value="kakinada" />Kakinada</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="checkbox" name="city"
+                                                class="cityFilter" value="trupati" />Trupati</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="checkbox" name="city"
+                                                class="cityFilter" value="nandyal" />Nandyal</label>
+                                    </li>
+                                    <li>
+                                        <label class="filterItem d-block"><input type="checkbox" name="city"
+                                                class="cityFilter" value="tirupati" />Tirupati</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter_box">
+                            <h3>Ownership</h3>
+                            <div class="filter_list">
+                                <!--<label class="filterItem d-block"><input type="radio" name="ownership" class="ownership" data-val="Both" />Both</label>-->
+                                <label class="filterItem d-block"><input type="radio" name="ownership" class="ownership"
+                                        data-val="Public" />Public</label>
+                                <label class="filterItem d-block"><input type="radio" name="ownership" class="ownership"
+                                        data-val="Private" />Private</label>
+                            </div>
+                        </div>
+                        <div class="filter_box">
+                            <h3>Branch</h3>
+                            <div class="filter_list">
+                                <label class="filterItem d-block"><input type="checkbox" name="branch"
+                                        class="branchFilter" value="DIP" />DIP</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="branch"
+                                        class="branchFilter" value="DM" />DM</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="branch"
+                                        class="branchFilter" value="MBBS" />MBBS</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="branch"
+                                        class="branchFilter" value="MCH" />MCH</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="branch"
+                                        class="branchFilter" value="MD" />MD</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="branch"
+                                        class="branchFilter" value="MS" />MS</label>
+                            </div>
+                        </div>
+
+                        <div class="filter_box">
+                            <h3>Course</h3>
+                            <div class="filter_list">
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter"
+                                        value="D.M.-Reproductive Medicine/M.Ch.-Reproductive Medicine and Surgery" />D.M.-Reproductive
+                                    Medicine/M.Ch.-Reproductive Medicine and Surgery</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="Diploma in Anaesthesia" />Diploma in
+                                    Anaesthesia</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="Diploma in Clinical Pathology" />Diploma in Clinical
+                                    Pathology</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter"
+                                        value="Diploma in Dermatology, Venereology and Leprosy" />Diploma in
+                                    Dermatology, Venereology and Leprosy</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="Diploma in Ophthalmology" />Diploma in
+                                    Ophthalmology</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="Diploma in Oto-Rhino-Laryngology" />Diploma in
+                                    Oto-Rhino-Laryngology</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="Diploma in Psychological Medicine" />Diploma in
+                                    Psychological Medicine</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="Diploma in Public Health" />Diploma in Public
+                                    Health</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="Diploma in Radio Therapy" />Diploma in Radio
+                                    Therapy</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="Diploma in Radio-Diagnosis" />Diploma in
+                                    Radio-Diagnosis</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="Diploma in Tuberculosis & Chest Diseases" />Diploma
+                                    in Tuberculosis & Chest Diseases</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="DM - Cardiology" />DM - Cardiology</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="DM - Critical Care Medicine" />DM - Critical Care
+                                    Medicine</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="DM - Endocrinology" />DM - Endocrinology</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="DM - Medical Gastroenterology" />DM - Medical
+                                    Gastroenterology</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="DM - Neonatology" />DM - Neonatology</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="DM - Nephrology" />DM - Nephrology</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="DM - Neurology" />DM - Neurology</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="DM - Oncology" />DM - Oncology</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="General Medicine" />General Medicine</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="M.Ch - Neuro Surgery" />M.Ch - Neuro Surgery</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="M.Ch - Paediatric Surgery" />M.Ch - Paediatric
+                                    Surgery</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter"
+                                        value="M.Ch - Plastic Surgery/Plastic & Reconstructive Surgery" />M.Ch - Plastic
+                                    Surgery/Plastic & Reconstructive Surgery</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter"
+                                        value="M.Ch - Surgical Gastroenterology/G.I. Surgery" />M.Ch - Surgical
+                                    Gastroenterology/G.I. Surgery</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="M.Ch - Surgical Oncology" />M.Ch - Surgical
+                                    Oncology</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter"
+                                        value="M.Ch - Thoracic Surgery/Cardio Thoracic Surgery/Cardio Vascular and thoracic Surgery" />M.Ch
+                                    - Thoracic Surgery/Cardio Thoracic Surgery/Cardio Vascular and thoracic
+                                    Surgery</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="M.Ch - Urology/Genito-Urinary Surgery" />M.Ch -
+                                    Urology/Genito-Urinary Surgery</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MD - Anaesthesiology" />MD - Anaesthesiology</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MD - Anatomy" />MD - Anatomy</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MD - Bio-Chemistry" />MD - Bio-Chemistry</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MD - Community Medicine" />MD - Community
+                                    Medicine</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MD - Dermatology , Venereology & Leprosy" />MD -
+                                    Dermatology , Venereology & Leprosy</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MD - Emergency Medicine" />MD - Emergency
+                                    Medicine</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MD - Family Medicine" />MD - Family Medicine</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MD - Forensic Medicine" />MD - Forensic
+                                    Medicine</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter"
+                                        value="MD - Forensic Medicine/Forensic Medicine & Toxicology" />MD - Forensic
+                                    Medicine/Forensic Medicine & Toxicology</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MD - General Medicine" />MD - General
+                                    Medicine</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MD - Immuno Haematology & Blood Transfusion" />MD -
+                                    Immuno Haematology & Blood Transfusion</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MD - Microbiology" />MD - Microbiology</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MD - Nuclear Medicine" />MD - Nuclear
+                                    Medicine</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MD - Paediatrics" />MD - Paediatrics</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MD - Pathology" />MD - Pathology</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MD - Pharmacology" />MD - Pharmacology</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MD - Physiology" />MD - Physiology</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MD - Psychiatry" />MD - Psychiatry</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MD - Radiation Oncology" />MD - Radiation
+                                    Oncology</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MD - Radio Diagnosis" />MD - Radio Diagnosis</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MD - Radio Diagnosis/Radiology" />MD - Radio
+                                    Diagnosis/Radiology</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MD - Radiotherapy/ Radiation Oncology" />MD -
+                                    Radiotherapy/ Radiation Oncology</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MD - Respiratory Medicine" />MD - Respiratory
+                                    Medicine</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter"
+                                        value="MD - Social & Preventive Medicine / Community Medicine" />MD - Social &
+                                    Preventive Medicine / Community Medicine</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter"
+                                        value="MD - Tuberculosis & Respiratory Diseases / Pulmonary Medicine" />MD -
+                                    Tuberculosis & Respiratory Diseases / Pulmonary Medicine</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MD/MS - Anatomy" />MD/MS - Anatomy</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MD/MS - Obstetrics & Gynaecology" />MD/MS -
+                                    Obstetrics & Gynaecology</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MD/MS - Ophthalmology" />MD/MS -
+                                    Ophthalmology</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MS - ENT" />MS - ENT</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MS - General Surgery" />MS - General Surgery</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MS - Obstetrics and Gynaecology" />MS - Obstetrics
+                                    and Gynaecology</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MS - Ophthalmology" />MS - Ophthalmology</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MS - Orthopaedics" />MS - Orthopaedics</label>
+                                <label class="filterItem d-block"><input type="checkbox" name="course"
+                                        class="courseFilter" value="MS - Otorhinolaryngology" />MS -
+                                    Otorhinolaryngology</label>
+                            </div>
+                        </div>
+
+                        <div class="filter_box">
+                            <h3>AV FEE/YR</h3>
+                            <div class="filter_list">
+                                <label class="filterItem d-block"><input type="checkbox" />&lt; 5 lakh</label>
+                                <label class="filterItem d-block"><input type="checkbox" />5 lakh -10 lakh</label>
+                                <label class="filterItem d-block"><input type="checkbox" />10 lakh -15 lakh</label>
+                                <label class="filterItem d-block"><input type="checkbox" />15 lakh -20 lakh</label>
+                                <label class="filterItem d-block"><input type="checkbox" />20 lakh -30 lakh</label>
+                                <label class="filterItem d-block"><input type="checkbox" />&gt; 30 lakh</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contentColumn col-lg-8">
+                    <div class="universityList">
+                        <?php
+
+                        $state = $_REQUEST['state'];
+                        $conn = mysqli_connect("localhost", "root", "", "collegs");
+
+                        $query = "SELECT * FROM `medical_in_india` WHERE `state`='$state'";
+
+                        $result = mysqli_query($conn, $query);
+
+                        if (mysqli_num_rows($result) > 0) {
+                            while ($row = mysqli_fetch_assoc($result)) { ?>
+                                <div class="universityItem">
+                                    <div class="detailArea">
+                                        <div class="row">
+                                            <div class="imgBox col-auto">
+                                                <a href="#"><img
+                                                        src="data:image/jpeg;base64,<?php echo base64_encode($row['college_logo']); ?>"></a>
+                                            </div>
+                                            <div class=" detailBox col">
+                                                    <h3><a href="#">
+                                                            <?php echo $row['college_name']; ?>
+                                                        </a></h3>
+                                                    <ul class="meta_info list-unstyled inline">
+                                                        <li class="info"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                                                            <?php echo $row['addres'] ?>,
+                                                            <?php echo $row['state'] ?>
+                                                        </li>
+                                                        <li class="info">
+                                                            <?php echo $row['ownership'] ?>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="general_text">MBBS</div>
+                                                    <ul class="snippet_list list-unstyled inline">
+                                                        <li>Exams: <a class="#">NEET</a></li>
+                                                        <li>Fees per year: <strong>
+                                                                <?php echo $row['fee_per_year']; ?>
+                                                            </strong></li>
+                                                    </ul>
+                                            </div>
+                                            <div class="btnBox col-sm-auto mt-4 mt-sm-0">
+                                                <a href="full_college_detail.php?college_name=<?php echo $row['college_name']?>"
+                                                    class="btn theme-btn btn2"><i class="fa fa-eye" aria-hidden="true"></i>
+                                                    Detail</a>
+                                            </div>
+                                        </div>
+                                        <div class="important_links">
+                                            <ul class="links_list list-unstyled inline">
+                                                <li><a href="#">About</a>
+                                                </li>
+                                                <li><a href="#">Courses</a>
+                                                </li>
+                                                <li><a href="#">Cut-off</a>
+                                                </li>
+                                                <li><a href="#">Admissions</a>
+                                                </li>
+                                                <li><a href="#">QnA</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <?php
+                            }
+                        } ?>
+                    </div>
+                    <input type="hidden" name="page" id="page" value="2">
+                    <input type="hidden" name="slug" id="slug" value="andhra-pradesh">
+                    <input type="hidden" id="ownership" value="">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="quoteForm section-padding shape1_bottom" style="background-image: url(images/form-bg.jpg);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md pb-5">
+                    <div class="content text-white">
+                        <div class="heading">
+                            <span class="subTitle">FREE 24/7 SUPPORT</span>
+                            <h2>Get Free & Quality Online Consultation</h2>
+                        </div>
+                        <p><strong>Medical Admission is a complex process and needs a great amount of pre-planning and a
+                                professional approach which can match RIGHT FIT FOR RIGHT STUDENTS.</strong></p>
+                        <p>Team Get My University assists medical aspirants in the following ways: </p>
+                        <ul>
+                            <li>College-level profiling which includes analysis of Clinical Facts &amp; Non-Clinical
+                                Facts.</li>
+                            <li>Proper budget planning by objectively explaining hidden elements.</li>
+                            <li>Clarity about the admission process of multiple states Counselling.</li>
+                            <li>Systematic analysis of past year Cutoffs and scientific trend analysis about the future.
+                            </li>
+                            <li>Planning the admission process in detail to prevent any confusion.</li>
+                        </ul>
+                        <p>It is not JUST about getting an institute, it is MOST about getting the best institute and a
+                            poor candidate profile.</p>
+                    </div>
+                </div>
+                <div class="col-md-auto">
+                    <div class="formBox">
+                        <h3>Request a callback</h3>
+                        <form class="form" method="post" action="https://www.getmyuniversity.com/public/query"
+                            id="submitForm">
+                            <input type="hidden" name="_token" value="YvoOqzc0Jwsr89Wrf6btBbhmRBaVe1CTbofzKk8N"> <input
+                                type="hidden" name="current_url" value="medical-colleges-in-andhra-pradesh.html">
+                            <div class="form-group">
+                                <label class="label">Full name</label>
+                                <input class="form-control" name="name" id="name" placeholder="Full name" type="text"
+                                    required />
+                                <span class="error" id="name_error" style="color:Red; display: none;">Please Enter
+                                    Name</span>
+                            </div>
+                            <div class="form-group">
+                                <label class="label">Phone</label>
+                                <input class="form-control" placeholder="Phone" type="text" name="number" id="number"
+                                    required />
+                                <span class="error" id="number_error" style="color:Red; display: none;">Please Enter
+                                    Number</span>
+                            </div>
+                            <div class="form-group">
+                                <label class="label">Email</label>
+                                <input class="form-control" placeholder="Email" type="text" name="email" id="email"
+                                    required />
+                                <span class="error" id="email_error" style="color:Red; display: none;">Please Enter
+                                    Email</span>
+                            </div>
+                            <div class="form-group">
+                                <label class="label">Message</label>
+                                <textarea name="service" class="form-control" id="message"></textarea>
+                                <span class="error" id="message_error" style="color:Red; display: none;">Please Enter
+                                    Message</span>
+                            </div>
+                            <div class="form-group">
+                                <input type="hidden" name="one_number" id="one_number" value="78" />
+                                <input type="hidden" name="two_number" id="two_number" value="96" />
+                                <label class="label">which is Bigger 78 or 96 ?</label>
+                                <input class="form-control" placeholder="Enter Big Number" type="text"
+                                    name="enter_number" id="enter_number" required />
+                                <span class="error" id="enter_number_error" style="color:Red; display: none;"></span>
+                            </div>
+                            <div class="btnBox">
+                                <button type="button" class="btn theme-btn" id="submitQuery">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer" class="footer dark-bg">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-lg-2 col-md-8">
+                        <div class="box">
+                            <h3>Top Courses</h3>
+                            <ul class="footer-menu list-unstyled">
+                                <li class="nav-item"><a href="md-colleges.html">MD in India</a></li>
+                                <li class="nav-item"><a href="ms-colleges.html">MS in India</a></li>
+                                <li class="nav-item"><a href="dm-colleges.html">DM in India</a></li>
+                                <li class="nav-item"><a href="mch-colleges.html">MCH in India</a></li>
+                                <li class="nav-item"><a href="dip-colleges.html">DIP in India</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-8">
+                        <div class="box">
+                            <h3>Top States</h3>
+                            <ul class="footer-menu mbbs_menu list-unstyled">
+                                <li class="nav-item"><a href="../medical-colleges-in-karnataka.html">Karnataka</a></li>
+                                <li class="nav-item"><a href="../medical-colleges-in-kerala.html">Kerala</a></li>
+                                <li class="nav-item"><a href="../medical-colleges-in-uttar-pradesh.html">Uttar
+                                        Pradesh</a></li>
+                                <li class="nav-item"><a href="../medical-colleges-in-rajasthan.html">Rajasthan</a></li>
+                                <li class="nav-item"><a href="../medical-colleges-in-west-bengal.html">West Bengal</a>
+                                </li>
+                                <li class="nav-item"><a href="../medical-colleges-in-pondicherry.html">Pondicherry</a>
+                                </li>
+                                <li class="nav-item"><a href="../medical-colleges-in-maharashtra.html">Maharashtra</a>
+                                </li>
+                                <li class="nav-item"><a href="../medical-colleges-in-uttarakhand.html">Uttarakhand</a>
+                                </li>
+                                <li class="nav-item"><a href="../medical-colleges-in-chandigarh.html">Chandigarh</a>
+                                </li>
+                                <li class="nav-item"><a href="../medical-colleges-in-bihar.html">Bihar</a></li>
+                                <li class="nav-item"><a href="../medical-colleges-in-delhi.html">Delhi</a></li>
+                                <li class="nav-item"><a href="../medical-colleges-in-gujarat.html">Gujarat</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 mt-5 mt-md-0">
+                        <div class="box">
+                            <h3>Legal</h3>
+                            <ul class="footer-menu list-unstyled">
+                                <li><a href="about-us.html">About Us</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="contact-us.html">Contact Us</a></li>
+                                <li><a href="#">Terms & Condition</a></li>
+                                <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mt-5 mt-lg-0">
+                        <div class="box">
+                            <h3>Office Location</h3>
+                            <div class="contactInfo box">
+                                <h4>Delhi</h4>
+                                <p class="text">Office Number 209 C, Crown Height, <br>Sector 10, Rohini, Delhi, 110085
+                                </p>
+                                <h4>Bangalore</h4>
+                                <p class="text">Office No. 135, Evoma, Prestige Featherlite Tech Park<br>EPIP Zone,
+                                    Whitefield, Bangalore, 560066</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="connect_wraper mt-5">
+                <div class="row text-center text-md-left">
+                    <div class="col-lg-4">
+                        <div class="box">
+                            <h3>Follow Us on</h3>
+                            <div class="socialLinks mt-3">
+                                <a href="https://www.facebook.com/getmyuniversity"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/get_my_university/"><i
+                                        class="fa fa-instagram"></i></a>
+                                <a href="https://twitter.com/getmyuniversity"><i class="fa fa-twitter"></i></a>
+                                <a href="https://www.youtube.com/@GetMyUniversity"><i class="fa fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 mt-5 mt-lg-0">
+                        <div class="box">
+                            <h3>Need Help?</h3>
+                            <div class="contact-info d-md-flex align-items-center justify-content-between">
+                                <a href="https://wa.me/917678676001" target="_blank"><i class="fa fa-whatsapp"></i>+91
+                                    76-786-76-001</a>
+                                <a href="tel:+917678676001"><i class="fa fa-phone"></i> +91 7678 676 001</a>
+                                <a href="mailto:info@getmyuniversity.com"><i class="fa fa-envelope"></i>
+                                    info@getmyuniversity.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright text-center text-md-left">
+                <p class="m-0">Copyright©️GMU ADMISSION SERVICES PRIVATE LIMITED. All rights reserved</p>
+            </div>
+        </div>
+
+    </footer>
+    <a class="whatsapp_chat" href="https://wa.me/917678676001" target="_blank"><i class="fa fa-whatsapp"></i></a>
+    <div class="search_modal modal fade" id="searchModal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+                    <div class="search_modalForm">
+                        <div class="row">
+
+                            <div class="col-md-7 order-md-12">
+                                <h2>Data Driven Admission <span>Counselling for Medical</span> Aspirants</h2>
+                                <ul class="searchTab nav nav-tabs" role="tablist">
+                                    <li class="nav-item"><a class="nav-link active" data-toggle="tab"
+                                            href="#searchUnivercity2">Search by University</a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab"
+                                            href="#searchCources2">Search by State/City</a></li>
+                                </ul>
+                                <div class="searchBar tab-content">
+                                    <div id="searchUnivercity2" class="tab-pane show active">
+                                        <form class="searchForm clearfix" role="form">
+                                            <input class="form-control" placeholder="Search University"
+                                                id="searchNames1" autocomplete="off" />
+                                            <input type="hidden" id="show_name_student1" value="" />
+                                            <button class="btn searchBtn" type="button" id="univercity1"><i
+                                                    class="fa fa-search"></i></button>
+
+                                            <span class="error_message" id="searchNames_error1"
+                                                style="display:none; color:red;"> Search User name</span>
+                                            <ul class="search_result" id='search_datas1' style="display: none;">
+
+                                            </ul>
+                                        </form>
+                                    </div>
+                                    <div id="searchCources2" class="tab-pane fade">
+                                        <form class="searchForm clearfix" role="form">
+                                            <input class="form-control" placeholder="Search State/City"
+                                                id="searchNames12" />
+                                            <input type="hidden" id="show_name_student12" value="" />
+                                            <span class="error_message" id="searchNames_error12"
+                                                style="display:none; color:red;"> Search User name</span>
+                                            <ul class="search_result" id='search_datas12' style="display: none;">
+
+                                            </ul>
+                                            <input class="form-control" placeholder="Search Courses"
+                                                id="searchNames22" />
+                                            <input type="hidden" id="show_name_student22" value="" />
+                                            <span class="error_message" id="searchNames_error22"
+                                                style="display:none; color:red;"> Search User name</span>
+                                            <ul class="search_result" id='search_datas22' style="display: none;">
+
+                                            </ul>
+                                            <button class="btn searchBtn" type="button" id="univercity12"><i
+                                                    class="fa fa-search"></i></button>
+
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="info">200+ Colleges, 400+ Courses, 1000+ Reviews </div>
+                            </div>
+                            <div class="col-md-5 text-center mt-4 mt-md-0">
+                                <div class="imgBox"><img src="images/main-hero2.png" alt="Abroad Journey" width="745"
+                                        height="636" /></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
