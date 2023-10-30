@@ -7,13 +7,14 @@ if (isset($_POST['btn'])) {
     $addres = $_POST['addres'];
     $fee = $_POST['fee'];
     $ownership = $_POST['ownership'];
+    $established = $_POST['established'];
 
     $image = $_FILES['image']['tmp_name'];
 
     $imageData = file_get_contents($image);
     $imageData = mysqli_real_escape_string($conn, $imageData);
 
-    $query = "INSERT INTO `medical_in_india`(`college_name`, `college_logo`, `state`, `addres`, `fee_per_year`, `ownership`) VALUES ('$collegeName','$imageData','$state','$addres','$fee','$ownership')"; // Fix the concatenation error here by separating $fee and $ownership.
+    $query = "INSERT INTO `medical_in_india`(`college_name`, `college_logo`, `state`, `addres`, `fee_per_year`, `ownership`,`established`) VALUES ('$collegeName','$imageData','$state','$addres','$fee','$ownership','$established')"; // Fix the concatenation error here by separating $fee and $ownership.
 
     if (mysqli_query($conn, $query)) {
         header('Location: http://localhost/collegs/admin/allIndiaUniversity.php');
@@ -69,6 +70,12 @@ if (isset($_POST['btn'])) {
                 <label for="exampleFormControlInput1" class="form-label">college logo</label>
                 <input type="file" class="form-control py-2" id="exampleFormControlInput1" name="image">
             </div>
+
+            <div class="mb-4">
+                <label for="exampleFormControlInput1" class="form-label">college Established in</label>
+                <input type="text" class="form-control py-2" id="exampleFormControlInput1" name="established" placeholder="college established in">
+            </div>
+
             <div class="mb-4">
                 <label for="inputownership">owership</label>
                 <select class="form-control" id="ownership" name="ownership">

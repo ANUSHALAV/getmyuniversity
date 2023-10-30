@@ -31,7 +31,7 @@
     </noscript>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css" media="all">
-    <link rel="stylesheet" href="css/modifystyle.css">
+    <!-- <link rel="stylesheet" href="css/modifystyle.css"> -->
 
     <!--Favicon-->
 
@@ -99,7 +99,7 @@
                                 <div>
                                     <a class="navbar-brand" href="index.html">
                                         <img src="data:image/jpeg;base64,<?php echo base64_encode($row['logo']); ?>"
-                                            alt="getmyuniversity" class="img-fluid ">
+                                            alt="getmyuniversity" class="img-fluid w-25">
                                     </a>
                                 </div>
                             <?php }
@@ -147,7 +147,7 @@
                                             if (mysqli_num_rows($result) > 0) {
                                                 while ($row = mysqli_fetch_array($result)) { ?>
 
-                                                    <li class="nav-item"><a
+                                                    <li class="nav-item"><a class="statelink"
                                                             href="public\medical-college-detail.php?state=<?php echo $row['state']; ?>">
                                                             <?php echo $row['state']; ?>
                                                         </a>

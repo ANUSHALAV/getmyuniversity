@@ -132,7 +132,7 @@
                                         </div>
                                         <div class="text">
                                             <div class="h3">ESTABLISHED</div>
-                                            <p></p>
+                                            <p><?php echo $row['established'] ?></p>
                                         </div>
                                     </div>
                                 </div>
@@ -297,7 +297,9 @@
                                 <section class="columnBox fee_column" id="feeTab">
                                     <div class="heading">
                                         <h2><span class="subTitle">Course, Fees, Duration and Fees of</span>
-                                        <?php echo $row['college_name'] ?>, <?php echo $row['state'] ?></h2>
+                                            <?php echo $row['college_name'] ?>,
+                                            <?php echo $row['state'] ?>
+                                        </h2>
                                     </div>
                                     <div class="info_table">
                                         <table class="table align-middle mb-0">
@@ -327,7 +329,10 @@
                                 </section>
                                 <section class="columnBox cutoff_column" id="cutoffTab">
                                     <div class="heading">
-                                        <h2><span class="subTitle">Cut-Offs</span>  <?php echo $row['college_name'] ?>,<?php echo $row['state'] ?></h2>
+                                        <h2><span class="subTitle">Cut-Offs</span>
+                                            <?php echo $row['college_name'] ?>,
+                                            <?php echo $row['state'] ?>
+                                        </h2>
                                     </div>
                                     <div class="info_table">
                                         <table class="table">
@@ -439,7 +444,9 @@
                                     <div class="contact column">
                                         <h3>Contact Details</h3>
                                         <p><strong><i class="fa fa-map-marker mr-2"></i>Address</strong>
-                                         <?php echo $row['addres'] ?>,  <?php echo $row['state'] ?></p>
+                                            <?php echo $row['addres'] ?>,
+                                            <?php echo $row['state'] ?>
+                                        </p>
                                         <p><a href="https://goo.gl/maps/r4wtXg8yiWpP5U2b9">View on Map</a></p>
                                         <p><strong><i class="fa fa-envelope mr-2"></i>Email</strong>
                                             <a href="#">director[at]aiimsguwahati.ac.in</a>
