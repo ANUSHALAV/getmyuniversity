@@ -167,29 +167,23 @@
                                 <ul class="dropdown-menu" id="dropdown5">
                                     <?php
                                     // Database connection
-                                    $mysqli = new mysqli("localhost", "root", "", "collegs");
+                                    $conn = mysqli_connect("localhost", "root", "", "collegs");
 
-                                    // Check connection
-                                    if ($mysqli->connect_error) {
-                                        die("Connection failed: " . $mysqli->connect_error);
-                                    }
 
                                     // Query to fetch MBBS program countries
                                     $query = "SELECT Country_name FROM pages WHERE Course_Name LIKE '%MBBS%'";
 
-                                    $result = $mysqli->query($query);
+                                    $result = mysqli_query($conn, $query);
 
-                                    if ($result->num_rows > 0) {
-                                        while ($row = $result->fetch_assoc()) {
-                                            $country = $row["Country_name"];
-                                            $countryLink = strtolower(str_replace(' ', '-', $country));
+                                    if (mysqli_num_rows($result) > 0) {
+                                        while ($row = mysqli_fetch_array($result)) { ?>
 
-                                            echo '<li class="nav-item"><a href="abroad/mbbs-in-' . $countryLink . '.html">MBBS in ' . $country . '</a></li>';
-
+                                            <li class="nav-item"><a href="abroad/mbbs-in-abrod.php?country_name=<?php echo $row['Country_name'] ?>">MBBS in
+                                                    <?php echo $row['Country_name']; ?>
+                                                </a></li>
+                                            <?php
                                         }
                                     }
-
-                                    $mysqli->close();
                                     ?>
                                 </ul>
                             </li>

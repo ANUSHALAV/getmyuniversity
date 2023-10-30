@@ -274,11 +274,11 @@
                                             <tbody>
                                                 <tr>
                                                     <td><strong>&nbsp;State</strong></td>
-                                                    <td>&nbsp;Assam</td>
+                                                    <td>&nbsp;<?php echo $row['state']?></td>
                                                 </tr>
                                                 <tr>
                                                     <td><strong>&nbsp;City</strong></td>
-                                                    <td>&nbsp;Guwahati</td>
+                                                    <td>&nbsp;<?php echo $row['addres'] ?></td>
                                                 </tr>
                                                 <tr>
                                                     <td><strong>&nbsp;Affiliated By</strong></td>

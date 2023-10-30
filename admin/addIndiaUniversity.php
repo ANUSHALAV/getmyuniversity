@@ -135,3 +135,19 @@ if (isset($_POST['btn'])) {
 </body>
 
 </html>
+
+
+
+<!-- <script>
+
+    addEventListener("key",()=>{
+        let passwordvalue=document.getElementById("password").value;
+
+
+        if(passwordvalue.length<=10){
+            return true;
+        }else{
+            pre
+        }
+    })
+</script> -->
