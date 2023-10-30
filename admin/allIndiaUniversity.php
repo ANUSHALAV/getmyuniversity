@@ -27,6 +27,7 @@
                     <th scope="col">ownership</th>
                     <th scope="col">established</th>
                     <th scope="col">college logo</th>
+                    <th scope="col">college image</th>
                     <th scope="col">edit</th>
                     <th scope="col">delete</th>
                 </tr>
@@ -71,6 +72,10 @@
                             <td>
                                 <img width="70px" height="60px"
                                     src="data:image/jpeg;base64,<?php echo base64_encode($row['college_logo']); ?>">
+                            </td>
+                            <td>
+                                <img width="70px" height="60px"
+                                    src="data:image/jpeg;base64,<?php echo base64_encode($row['college_img']); ?>">
                             </td>
                             <td><a href="" class="btn btn-primary" id="<?php echo $row['id'] ?>">edit</a></td>
                             <td><a href="" class="btn btn-danger" id="<?php echo $row['id'] ?>">delete</a></td>

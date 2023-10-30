@@ -131,12 +131,14 @@
 
             <section class="country_banner innerSlide">
                 <div class="bg_img">
-                    <img data-src="https://www.getmyuniversity.com/images/country_images/large/mbbs in banglasesh.jpg-27616_1.jpg"
-                        onerror="this.src='../images/UK-lg.jpg';" alt="MBBS In Bangladesh" width="1907" height="513">
+                    <img src="data:image/jpeg;base64,<?php echo base64_encode($row['Country_Img']); ?>" alt="MBBS In Bangladesh"
+                        width="1907" height="513">
                 </div>
                 <div class="container">
                     <div class="innerBox">
-                        <h1><span class="subtitle">Study in</span> MBBS In <?php echo $row['Country_name'] ?></h1>
+                        <h1><span class="subtitle">Study in</span> MBBS In
+                            <?php echo $row['Country_name'] ?>
+                        </h1>
                     </div>
                 </div>
             </section>
@@ -254,7 +256,7 @@
 
                                 <p style="text-align:justify">&nbsp;</p>
 
-                                <p style="text-align:justify"><span style="font-size:16px"><strong>Details of Bangladesh MBBS
+                                <p style="text-align:justify"><span style="font-size:16px"><strong>Details of <?php echo $row['Country_name'] ?> MBBS
                                             colleges -</strong></span></p>
 
                                 <p style="text-align:justify"><span style="font-size:16px">There are 75 private MBBS colleges in

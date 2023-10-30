@@ -85,8 +85,10 @@
 
                     <div class="banner_wrapper">
                         <div class="bg_img">
-                            <img scr="" alt="" width="1907" height="513">
+                            <img src="data:image/jpeg;base64,<?php echo base64_encode($row['college_img']); ?>" alt=""
+                                width="1907" height="513">
                         </div>
+
                         <div class="row innerBox px-4 pb-md-4">
                             <div class="col-md-auto">
                                 <div class="icon">
@@ -132,7 +134,9 @@
                                         </div>
                                         <div class="text">
                                             <div class="h3">ESTABLISHED</div>
-                                            <p><?php echo $row['established'] ?></p>
+                                            <p>
+                                                <?php echo $row['established'] ?>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -274,11 +278,15 @@
                                             <tbody>
                                                 <tr>
                                                     <td><strong>&nbsp;State</strong></td>
-                                                    <td>&nbsp;<?php echo $row['state']?></td>
+                                                    <td>&nbsp;
+                                                        <?php echo $row['state'] ?>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td><strong>&nbsp;City</strong></td>
-                                                    <td>&nbsp;<?php echo $row['addres'] ?></td>
+                                                    <td>&nbsp;
+                                                        <?php echo $row['addres'] ?>
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td><strong>&nbsp;Affiliated By</strong></td>

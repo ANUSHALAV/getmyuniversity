@@ -119,12 +119,11 @@
             });
 
 
-            $("#univercity").on("click", () => {
+            // $("#univercity").on("click", () => {
 
-                let inputData = $("#searchNames").val();
-                $(".clearfix").trigger("reset");
-                alert("click search button");
-            });
+            //     let inputData = $("#searchNames").val();
+            //     $(".clearfix").trigger("reset");
+            // });
 
 
             $("#search_state_city_result").hide();
