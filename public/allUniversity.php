@@ -33,7 +33,7 @@ if (mysqli_num_rows($result) > 0) {
                         ' . $row['ownership'] . '
                     </li>
                 </ul>
-                <div class="general_text">MBBS</div>
+                <div class="general_text">' . $row['courses'] . '</div>
                 <ul class="snippet_list list-unstyled inline">
                     <li>Exams: <a class="#">NEET</a></li>
                     <li>Fees per year: <strong>

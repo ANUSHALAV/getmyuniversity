@@ -1,38 +1,32 @@
 <section class="country_wraper section-padding pt-4">
-        <div class="container">
-            <div class="heading text-center">
-				<h2>MBBS Abroad Countries</h2>
-			</div>
+    <div class="container">
+        <div class="heading text-center">
+            <h2>MBBS Abroad Countries</h2>
+        </div>
+        <?php
 
+        $conn = mysqli_connect("localhost", "root", "", "collegs");
+
+        $query = "SELECT * FROM `pages` LIMIT 5";
+
+        $result = mysqli_query($conn, $query);
+
+        if (mysqli_num_rows($result) > 0) { ?>
             <div class="countryList d-flex justify-content-center">
-                <div class="item">
-                    <a href="abroad/mbbs-in-russia.html">
-                    <img src="images/map-icon/russia.png" alt="Russia" width="100" height="100" />
-                    <h3>Russia</h3></a>
-                </div>
-                <div class="item">
-                    <a href="abroad/mbbs-in-bangladesh.html">
-                    <img src="images/map-icon/Bangladesh.jpg" alt="Bangladesh" width="100" height="100" />
-                    <h3>Bangladesh</h3></a>
-                </div>
-                <div class="item">
-                    <a href="abroad/mbbs-in-nepal.html">
-                    <img src="images/map-icon/Nepal.webp" alt="Nepal" width="100" height="100" />
-                    <h3>Nepal</h3></a>
-                </div>
-                <div class="item">
-                    <a href="abroad/mbbs-in-kazakhstan.html">
-                    <img src="images/map-icon/Kazakhstan.png" alt="Kazakhstan" width="100" height="100" />
-                    <h3>Kazakhstan</h3></a>
-                </div>
-                <div class="item">
-                    <a href="abroad/mbbs-in-kyrgyzstan.html">
-                    <img src="images/map-icon/flag-round-250.png" alt="Germany" width="100" height="100" />
-                    <h3>Kyrgyzstan</h3></a>
-                </div>
-            </div>
-<!--            <div class="btnBox text-center mt-5">
-                <a href="#" class="btn theme-btn">View All Country</a>
-            </div>
--->        </div>
-    </section>
+                <?php
+                while ($row = mysqli_fetch_assoc($result)) { ?>
+                    <div class="item">
+                        <a href="abroad/mbbs-in-russia.html">
+                            <img src="data:image/jpeg;base64,<?php echo base64_encode($row['Country_Img']); ?>"
+                                alt="<?php echo $row['Country_name'] ?>" width="100" height="100" />
+                            <h3>
+                                <?php echo $row['Country_name'] ?>
+                            </h3>
+                        </a>
+                    </div>
+                    <?php
+                }
+        } ?>
+        </div>
+    </div>
+</section>

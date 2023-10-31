@@ -9,6 +9,7 @@ if (isset($_POST['btn'])) {
     $ownership = $_POST['ownership'];
     $established = $_POST['established'];
     $location_detail = $_POST['location_detail'];
+    $courses = $_POST['courses'];
 
     $image = $_FILES['image']['tmp_name'];
 
@@ -21,7 +22,7 @@ if (isset($_POST['btn'])) {
     $collegeimageData = file_get_contents($collegeimage);
     $collegeimageData = mysqli_real_escape_string($conn, $collegeimageData);
 
-    $query = "INSERT INTO `medical_in_india`(`college_name`, `college_logo`, `state`, `addres`, `fee_per_year`, `ownership`,`established`,`college_img`,`location_detail`) VALUES ('$collegeName','$imageData','$state','$addres','$fee','$ownership','$established','$collegeimageData','$location_detail')";
+    $query = "INSERT INTO `medical_in_india`(`college_name`, `college_logo`, `state`, `addres`, `fee_per_year`, `ownership`,`established`,`college_img`,`location_detail`,`courses`) VALUES ('$collegeName','$imageData','$state','$addres','$fee','$ownership','$established','$collegeimageData','$location_detail','$courses')";
 
     if (mysqli_query($conn, $query)) {
         header('Location: http://localhost/collegs/admin/allIndiaUniversity.php');
@@ -30,12 +31,6 @@ if (isset($_POST['btn'])) {
     }
 }
 ?>
-
-
-
-
-
-
 
 
 <!DOCTYPE html>
@@ -81,6 +76,12 @@ if (isset($_POST['btn'])) {
             <div class="mb-4">
                 <label for="exampleFormControlInput1" class="form-label">college image</label>
                 <input type="file" class="form-control py-2" id="exampleFormControlInput1" name="college_img">
+            </div>
+
+            <div class="mb-4">
+                <label for="exampleFormControlInput1" class="form-label">courses</label>
+                <input type="text" class="form-control py-2" id="exampleFormControlInput1" placeholder="courses"
+                    name="courses">
             </div>
 
             <div class="mb-4">
@@ -154,19 +155,3 @@ if (isset($_POST['btn'])) {
 </body>
 
 </html>
-
-
-
-<!-- <script>
-
-    addEventListener("key",()=>{
-        let passwordvalue=document.getElementById("password").value;
-
-
-        if(passwordvalue.length<=10){
-            return true;
-        }else{
-            pre
-        }
-    })
-</script> -->

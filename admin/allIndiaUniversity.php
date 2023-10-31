@@ -26,6 +26,7 @@
                     <th scope="col">fee</th>
                     <th scope="col">ownership</th>
                     <th scope="col">established</th>
+                    <th scope="col">courses</th>
                     <th scope="col">college logo</th>
                     <th scope="col">college image</th>
                     <th scope="col">edit</th>
@@ -68,6 +69,9 @@
                             </td>
                             <td>
                                 <?php echo $row['established']; ?>
+                            </td>
+                            <td>
+                                <?php echo $row['courses']; ?>
                             </td>
                             <td>
                                 <img width="70px" height="60px"

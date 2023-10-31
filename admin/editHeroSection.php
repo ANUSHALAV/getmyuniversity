@@ -11,53 +11,66 @@
     <?php
     include 'sidebar.php';
     ?>
+    <?php
+
+    $conn = mysqli_connect("localhost", "root", "", "collegs");
+
+    $query = "SELECT * FROM `hero_section` WHERE `id`=1";
+    $result = mysqli_query($conn, $query);
+    if (mysqli_num_rows($result)) {
+        while ($row = mysqli_fetch_array($result)) { ?>
+
+            <div class="container py-3 text-capitalize">
+                <h2 class="fw-bold my-4">edit hero section</h2>
+
+                <form action="updateHeroSection.php" class="my-5" method="POST" enctype="multipart/form-data">
+
+                    <div class="mb-4">
+                        <label for="exampleFormControlInput1" class="form-label">heading 1</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="heading 1"
+                            name="heading1" value="<?php echo $row['heading1'] ?>">
+                    </div>
+                    <div class="mb-4">
+                        <label for="exampleFormControlInput1" class="form-label">heading 2</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="heading 2"
+                            name="heading2" value="<?php echo $row['heading2'] ?>">
+                    </div>
+                    <div class="mb-4">
+                        <label for="exampleFormControlInput1" class="form-label">heading 3</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="heading 3"
+                            name="heading3" value="<?php echo $row['heading3'] ?>">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="exampleFormControlInput1" class="form-label">small discription</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                            placeholder="small description about the hero section" name="discription"
+                            value="<?php echo $row['discription'] ?>">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="exampleFormControlInput1" class="form-label">hero section background color</label>
+                        <input type="color" class="form-control w-25 p-0" id="exampleFormControlInput1" name="bg-color"
+                            value="<?php echo $row['bgcolor'] ?>">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="exampleFormControlInput1" class="form-label">hero section image</label>
+                        <input type="file" class="form-control" id="exampleFormControlInput1" name="hero-img">
+                    </div>
+
+                    <div class="mb-5">
+                        <input type="submit" value="Submit" class="btn btn-outline-danger px-5" id="exampleFormControlInput1"
+                            name="btn">
+                    </div>
 
 
-    <div class="container py-3 text-capitalize">
-        <h2 class="fw-bold my-4">edit hero section</h2>
-
-        <form action="updateHeroSection.php" class="my-5" method="POST" enctype="multipart/form-data">
-
-            <div class="mb-4">
-                <label for="exampleFormControlInput1" class="form-label">heading 1</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="heading 1"
-                    name="heading1">
+                </form>
             </div>
-            <div class="mb-4">
-                <label for="exampleFormControlInput1" class="form-label">heading 2</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="heading 2"
-                    name="heading2">
-            </div>
-            <div class="mb-4">
-                <label for="exampleFormControlInput1" class="form-label">heading 3</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="heading 3"
-                    name="heading3">
-            </div>
 
-            <div class="mb-4">
-                <label for="exampleFormControlInput1" class="form-label">small discription</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1"
-                    placeholder="small description about the hero section" name="discription">
-            </div>
-
-            <div class="mb-4">
-                <label for="exampleFormControlInput1" class="form-label">hero section background color</label>
-                <input type="color" class="form-control w-25 p-0" id="exampleFormControlInput1" name="bg-color">
-            </div>
-
-            <div class="mb-4">
-                <label for="exampleFormControlInput1" class="form-label">hero section image</label>
-                <input type="file" class="form-control" id="exampleFormControlInput1" name="hero-img">
-            </div>
-
-            <div class="mb-5">
-                <input type="submit" value="Submit" class="btn btn-outline-danger px-5" id="exampleFormControlInput1"
-                    name="btn">
-            </div>
-
-
-        </form>
-    </div>
+            <?php
+        }
+    } ?>
 </body>
 
 </html>
