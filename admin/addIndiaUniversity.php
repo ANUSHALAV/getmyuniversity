@@ -8,6 +8,7 @@ if (isset($_POST['btn'])) {
     $fee = $_POST['fee'];
     $ownership = $_POST['ownership'];
     $established = $_POST['established'];
+    $location_detail = $_POST['location_detail'];
 
     $image = $_FILES['image']['tmp_name'];
 
@@ -20,7 +21,7 @@ if (isset($_POST['btn'])) {
     $collegeimageData = file_get_contents($collegeimage);
     $collegeimageData = mysqli_real_escape_string($conn, $collegeimageData);
 
-    $query = "INSERT INTO `medical_in_india`(`college_name`, `college_logo`, `state`, `addres`, `fee_per_year`, `ownership`,`established`,`college_img`) VALUES ('$collegeName','$imageData','$state','$addres','$fee','$ownership','$established','$collegeimageData')"; // Fix the concatenation error here by separating $fee and $ownership.
+    $query = "INSERT INTO `medical_in_india`(`college_name`, `college_logo`, `state`, `addres`, `fee_per_year`, `ownership`,`established`,`college_img`,`location_detail`) VALUES ('$collegeName','$imageData','$state','$addres','$fee','$ownership','$established','$collegeimageData','$location_detail')";
 
     if (mysqli_query($conn, $query)) {
         header('Location: http://localhost/collegs/admin/allIndiaUniversity.php');
@@ -86,6 +87,12 @@ if (isset($_POST['btn'])) {
                 <label for="exampleFormControlInput1" class="form-label">college Established in</label>
                 <input type="text" class="form-control py-2" id="exampleFormControlInput1" name="established"
                     placeholder="college established in">
+            </div>
+
+            <div class="mb-4">
+                <label for="exampleFormControlInput1" class="form-label">college location detail</label>
+                <input type="text" class="form-control py-2" id="exampleFormControlInput1" name="location_detail"
+                    placeholder="college location detail">
             </div>
 
             <div class="mb-4">

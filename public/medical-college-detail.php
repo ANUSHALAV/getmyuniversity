@@ -95,7 +95,7 @@
                                     </li>
                                     <li>
                                         <label class="filterItem d-block"><input type="radio" data-val="jammu-kashmir"
-                                                class="stateFilter" name="state" id="Jammu&Kashmir" />Jammu &
+                                                class="stateFilter" name="state" id="JammuKashmir" />Jammu &
                                             Kashmir</label>
                                     </li>
                                     <li>
@@ -240,25 +240,6 @@
                                         data-val="Private" id="private" />Private</label>
                             </div>
                         </div>
-
-
-                        <!-- <div class="filter_box">
-                            <h3>Branch</h3>
-                            <div class="filter_list">
-                                <label class="filterItem d-block"><input type="radio" name="branch" class="branchFilter"
-                                        value="DIP" />DIP</label>
-                                <label class="filterItem d-block"><input type="radio" name="branch" class="branchFilter"
-                                        value="DM" />DM</label>
-                                <label class="filterItem d-block"><input type="radio" name="branch" class="branchFilter"
-                                        value="MBBS" />MBBS</label>
-                                <label class="filterItem d-block"><input type="radio" name="branch" class="branchFilter"
-                                        value="MCH" />MCH</label>
-                                <label class="filterItem d-block"><input type="radio" name="branch" class="branchFilter"
-                                        value="MD" />MD</label>
-                                <label class="filterItem d-block"><input type="radio" name="branch" class="branchFilter"
-                                        value="MS" />MS</label>
-                            </div>
-                        </div> -->
 
 
 
@@ -1149,7 +1130,7 @@
 
 
 
-            let stateJammu = $("#Jammu&Kashmir");
+            let stateJammu = $("#JammuKashmir");
 
 
             stateJammu.change(function () {
@@ -1181,6 +1162,28 @@
                         type: "POST",
                         data: {
                             state: "Uttar Pradesh"
+                        },
+                        success: function (data) {
+                            $(".universityList").html(data);
+                        }
+                    });
+
+                } else {
+                    loadData();
+                }
+            });
+
+
+            let stateGoa = $("#Goa");
+
+
+            stateGoa.change(function () {
+                if (stateGoa.is(":checked")) {
+                    $.ajax({
+                        url: "allUniversity.php",
+                        type: "POST",
+                        data: {
+                            state: "Goa"
                         },
                         success: function (data) {
                             $(".universityList").html(data);

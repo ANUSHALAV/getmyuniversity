@@ -250,23 +250,16 @@
                                                 contribute to the field of medicine.</span></span></p>
 
                                     <p style="text-align:justify"><span style="font-size:18px"><span
-                                                style="font-family:Verdana,Geneva,sans-serif">AIIMS Guwahati Location
-                                                Details</span></span></p>
+                                                style="font-family:Verdana,Geneva,sans-serif">
+                                                <?php echo $row['college_name'] ?> Location
+                                                Details
+                                            </span></span></p>
 
                                     <p style="text-align:justify"><span style="font-family:Verdana,Geneva,sans-serif"><span
-                                                style="font-size:16px">The AIIMS Guwahati campus is situated in a strategic
-                                                location that offers easy accessibility and connectivity. It is well-connected
-                                                to other parts of Guwahati and nearby areas through various modes of
-                                                transportation. The Lokpriya Gopinath Bordoloi International Airport, also known
-                                                as Guwahati Airport, is the nearest airport, providing domestic and
-                                                international flights to major cities in India and beyond.</span></span></p>
+                                                style="font-size:16px">
+                                                <?php echo $row['location_detail'] ?>
+                                            </span></span></p>
 
-                                    <p style="text-align:justify"><span style="font-family:Verdana,Geneva,sans-serif"><span
-                                                style="font-size:16px">Being well-connected by all forms of transport, the
-                                                Guwahati Railway Station is the most common form of transport used by the
-                                                students and faculty to reach the college. It connects Guwahati to various
-                                                cities and towns across India through a robust railway network.</span></span>
-                                    </p>
                                     <div class="info_table">
                                         <table class="table align-middle mb-0">
                                             <thead>

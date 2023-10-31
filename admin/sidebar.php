@@ -98,7 +98,8 @@ $link = new MySQLi(DB_HOST, DB_USER, DB_PASS, DB_NAME);
       </a></button>
     <button class='btn w-100 btn-dark  m-2'><a class='text-start' href="allblogs.php">All blogs </a></button>
     <button class='btn w-100 btn-dark  m-2'><a class='text-start' href="editForum.php">Forum </a></button>
-    <button class='btn w-100 btn-dark  m-2'><a class='text-start' href="editNavbar.php">Navabar</a></button>
+    <button class='btn w-100 btn-dark  m-2'><a class='text-start' href="editNavbar.php">Edit Navabar</a></button>
+    <button class='btn w-100 btn-dark  m-2'><a class='text-start' href="editHeroSection.php">Edit hero section</a></button>
     <button class='btn w-100 btn-dark  m-2'><a class='text-start' href="editfooter.php">Footer</a></button>
 
   </div>
