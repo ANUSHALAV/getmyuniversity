@@ -15,10 +15,10 @@
             <div class="countryList d-flex justify-content-center">
                 <?php
                 while ($row = mysqli_fetch_assoc($result)) { ?>
-                    <div class="item">
-                        <a href="abroad/mbbs-in-russia.html">
+                    <div class="item ">
+                        <a href="abroad/mbbs-in-russia.html" class="">
                             <img src="data:image/jpeg;base64,<?php echo base64_encode($row['Country_Img']); ?>"
-                                alt="<?php echo $row['Country_name'] ?>" width="100" height="100" />
+                                alt="<?php echo $row['Country_name'] ?>" width="100" height="120" class="img-fluid" />
                             <h3>
                                 <?php echo $row['Country_name'] ?>
                             </h3>

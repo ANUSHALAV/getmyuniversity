@@ -112,9 +112,9 @@
                     <nav id="nav">
                         <button class="closeNav d-lg-none">&times;</button>
                         <ul class="main_menu list-unstyled inline">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about-us.php">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="gallery.php">Gallery</a></li>
                             <li class="dropdown_item nav-item">
                                 <a class="nav-link" href="#">Courses <i class="fa fa-angle-down"
                                         aria-hidden="true"></i></a>

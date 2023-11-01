@@ -87,6 +87,8 @@ $link = new MySQLi(DB_HOST, DB_USER, DB_PASS, DB_NAME);
     <button class='btn w-100 btn-dark  m-2'><a class='text-start' href="allIndiaUniversity.php"> All indian medical
         university </a></button>
     <button class='btn w-100 btn-dark  m-2'><a class='text-start' href="addservices.php"> Add Services </a></button>
+    <button class='btn w-100 btn-dark  m-2'><a class='text-start' href="service_section.php"> sercive section image </a></button>
+
     <button class='btn w-100 btn-dark  m-2'><a class='text-start' href="allservices.php"> All Services </a></button>
     <button class='btn w-100 btn-dark  m-2'><a class='text-start' href="addaboutPhotos.php"> Add About Photos
       </a></button>
@@ -101,6 +103,8 @@ $link = new MySQLi(DB_HOST, DB_USER, DB_PASS, DB_NAME);
     <button class='btn w-100 btn-dark  m-2'><a class='text-start' href="editNavbar.php">Edit Navabar</a></button>
     <button class='btn w-100 btn-dark  m-2'><a class='text-start' href="editHeroSection.php">Edit hero section</a></button>
     <button class='btn w-100 btn-dark  m-2'><a class='text-start' href="editfooter.php">Footer</a></button>
+    <button class='btn w-100 btn-dark  m-2'><a class='text-start' href="addGallery.php">Add Gallery</a></button>
+    <button class='btn w-100 btn-dark  m-2'><a class='text-start' href="allGallery.php">All Gallery</a></button>
 
   </div>
 
