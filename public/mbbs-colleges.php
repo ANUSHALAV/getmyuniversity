@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 
@@ -59,7 +58,7 @@
 </head>
 
 <body>
-<?php include "../Components/Navbar.php"; ?>
+    <?php include "../Components/Navbar.php"; ?>
     <section class="uniHero_wrapper text-white">
         <div class="bg_img">
             <img src="" alt="MBBS" width="1907" height="513">
@@ -80,7 +79,7 @@
                 <button class="filter_openBtn  d-lg-none btn theme-btn">Filter</button>
             </div>
             <div class="row">
-            <div class="sidebarColumn col-lg-4 p-0">
+                <div class="sidebarColumn col-lg-4 p-0">
                     <button class="filter_closeBtn d-lg-none"></button>
                     <div class="filter_sidebar">
                         <div class="headBar d-flex align-items-center justify-content-between pb-3 mb-4 border-bottom">
@@ -273,77 +272,13 @@
                     </div>
                 </div>
                 <div class="contentColumn col-lg-8">
-                    
+
                     <div class="universityList">
 
-                    <?php
 
-                    $course=$_REQUEST['course_name'];
-                    $conn = mysqli_connect("localhost", "root", "", "collegs");
 
-                    $query = "SELECT * FROM `medical_in_india` WHERE `courses` LIKE '%$course%'";
-
-                    $result = mysqli_query($conn, $query);
-
-                    if (mysqli_num_rows($result) > 0) {
-                        while ($row = mysqli_fetch_array($result)) {
-                            ?>
-                       
-                                                                                    <div class="universityItem">
-                                                                                                            <div class="detailArea">
-                                                                                                                <div class="row">
-                                                                                                                    <div class="imgBox col-auto">
-                                                                                                                        <a href=""><img
-                                                                                                                                src="data:image/jpeg;base64,<?php echo base64_encode($row['college_logo']); ?>"></a>
-                                                                                                                    </div>
-                                                                                                                    <div class="detailBox col">
-                                                                                                                        <h3><a
-                                                                                                                                href=""><?php echo $row['college_name'] ?></a></h3>
-                                                                                                                        <ul class="meta_info list-unstyled inline">
-                                                                                                                            <li class="info"><i class="fa fa-map-marker" aria-hidden="true"></i><?php echo $row['addres'] ?>,<?php echo $row['state'] ?></li>
-                                                                                                                            <li class="info"><?php echo $row['ownership'] ?></li>
-                                                                                                                        </ul>
-                                                                                                                        <div class="general_text"><?php echo $row['courses'] ?></div>
-                                                                                                                        <ul class="snippet_list list-unstyled inline">
-                                                                                                                            <li>Exams: <a class="#">NEET</a></li>
-                                                                                                                            <li>Fees per year: <strong>₹-<?php echo $row['fee_per_year'] ?></strong></li>
-                                                                                                                        </ul>
-                                                                                                                    </div>
-                                                                                                                    <div class="btnBox col-sm-auto mt-4 mt-sm-0">
-                                                                                                                        <a href="full_college_detail.php?college_name=<?php echo $row['college_name'] ?>"
-                                                                                                                            class="btn theme-btn btn2"><i class="fa fa-eye" aria-hidden="true"></i>
-                                                                                                                            Detail</a>
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                                <div class="important_links">
-                                                                                                                    <ul class="links_list list-unstyled inline">
-                                                                                                                        <li><a
-                                                                                                                                href="">About</a>
-                                                                                                                        </li>
-                                                                                                                        <li><a
-                                                                                                                                href="">Courses</a>
-                                                                                                                        </li>
-                                                                                                                        <li><a
-                                                                                                                                href="">Cut-off</a>
-                                                                                                                        </li>
-                                                                                                                        <li><a
-                                                                                                                                href="">Admissions</a>
-                                                                                                                        </li>
-                                                                                                                        <li><a
-                                                                                                                                href="">QnA</a>
-                                                                                                                        </li>
-                                                                                                                    </ul>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                            <!--<div class="brochuresInfo"><i class="fa fa-check-circle-o" aria-hidden="true"></i> 100+ Brochures downloaded so far</div>-->
-                                                                                    </div>
-                                                                            <?php
-                        }
-                    }
-                    ?>
-                      
                     </div>
-                   
+
                 </div>
             </div>
         </div>
@@ -493,7 +428,7 @@
                     </div>
                 </div>
             </div>
-           
+
             <div class="connect_wraper mt-5">
                 <div class="row text-center text-md-left">
                     <div class="col-lg-4">
@@ -610,6 +545,702 @@
     <script src="js/owl.carousel.min.js"></script>
 
     <script src="js/script.js"></script>
-  
+
+
+    <script>
+        $(document).ready(function () {
+            let courseName = "<?php echo $_REQUEST['course_name'] ?>";
+            function loadData() {
+                $.ajax({
+                    url: "madicalallUniversity.php",
+                    type: "POST",
+                    data: {
+                        courseName: courseName
+                    },
+                    success: function (data) {
+                        $(".universityList").html(data);
+                    }
+                });
+            }
+
+            loadData();
+
+
+
+            let checkbox5lakh = $("#5lakh");
+            let checkbox5lakhTo10lakh = $("#5-to-10");
+            let checkbox10lakhTo15lakh = $("#10-to-15");
+            let checkbox15lakhTo20lakh = $("#15-to-20");
+            let checkbox20lakhTo30lakh = $("#20-to-30");
+            let checkbox30lakh = $("#30lakh");
+
+
+            checkbox5lakh.change(function () {
+                if (checkbox5lakh.is(":checked")) {
+                    $.ajax({
+                        url: "filterFeeData.php",
+                        type: "POST",
+                        data: {
+                            range: 5
+                        },
+                        success: function (data) {
+                            $(".universityList").html(data);
+                        }
+                    });
+
+                } else {
+                    loadData();
+                }
+            });
+
+            checkbox5lakhTo10lakh.change(function () {
+                if (checkbox5lakhTo10lakh.is(":checked")) {
+                    $.ajax({
+                        url: "filterFeeData.php",
+                        type: "POST",
+                        data: {
+                            range: 10
+                        },
+                        success: function (data) {
+                            $(".universityList").html(data);
+                        }
+                    });
+
+                } else {
+                    loadData();
+                }
+            });
+
+
+            checkbox10lakhTo15lakh.change(function () {
+                if (checkbox10lakhTo15lakh.is(":checked")) {
+                    $.ajax({
+                        url: "filterFeeData.php",
+                        type: "POST",
+                        data: {
+                            range: 15
+                        },
+                        success: function (data) {
+                            $(".universityList").html(data);
+                        }
+                    });
+
+                } else {
+                    loadData();
+                }
+            });
+
+            checkbox15lakhTo20lakh.change(function () {
+                if (checkbox15lakhTo20lakh.is(":checked")) {
+                    $.ajax({
+                        url: "filterFeeData.php",
+                        type: "POST",
+                        data: {
+                            range: 20
+                        },
+                        success: function (data) {
+                            $(".universityList").html(data);
+                        }
+                    });
+
+                } else {
+                    loadData();
+                }
+            });
+
+
+            checkbox20lakhTo30lakh.change(function () {
+                if (checkbox20lakhTo30lakh.is(":checked")) {
+                    $.ajax({
+                        url: "filterFeeData.php",
+                        type: "POST",
+                        data: {
+                            range: 30
+                        },
+                        success: function (data) {
+                            $(".universityList").html(data);
+                        }
+                    });
+
+                } else {
+                    loadData();
+                }
+            });
+
+
+            checkbox30lakh.change(function () {
+                if (checkbox30lakh.is(":checked")) {
+                    $.ajax({
+                        url: "filterFeeData.php",
+                        type: "POST",
+                        data: {
+                            range: 31
+                        },
+                        success: function (data) {
+                            $(".universityList").html(data);
+                        }
+                    });
+
+                } else {
+                    loadData();
+                }
+            });
+
+
+
+            let checkboxPublicOwnership = $("#public");
+            let checkboxPrivateOwnership = $("#private");
+
+
+            checkboxPublicOwnership.change(function () {
+                if (checkboxPublicOwnership.is(":checked")) {
+                    $.ajax({
+                        url: "allOwnershipuniversity.php",
+                        type: "POST",
+                        data: {
+                            range: "public",
+                            courseName: courseName
+                        },
+                        success: function (data) {
+                            $(".universityList").html(data);
+                        }
+                    });
+
+                } else {
+                    loadData();
+                }
+            });
+
+
+            checkboxPrivateOwnership.change(function () {
+                if (checkboxPrivateOwnership.is(":checked")) {
+                    $.ajax({
+                        url: "allOwnershipuniversity.php",
+                        type: "POST",
+                        data: {
+                            range: "private",
+                            courseName: courseName
+
+
+                        },
+                        success: function (data) {
+                            $(".universityList").html(data);
+                        }
+                    });
+
+                } else {
+                    loadData();
+                }
+            });
+
+
+            let stateUttarakhand = $("#Uttarakhand");
+
+
+            stateUttarakhand.change(function () {
+                if (stateUttarakhand.is(":checked")) {
+                    $.ajax({
+                        url: "allstatemedicalUniversity.php",
+                        type: "POST",
+                        data: {
+                            state: "uttarakhand",
+                            courseName: courseName
+                        },
+                        success: function (data) {
+                            $(".universityList").html(data);
+                        }
+                    });
+
+                } else {
+                    loadData();
+                }
+            });
+
+
+            let stateKarnataka = $("#Karnataka");
+
+
+            stateKarnataka.change(function () {
+                if (stateKarnataka.is(":checked")) {
+                    $.ajax({
+                        url: "allstatemedicalUniversity.php",
+                        type: "POST",
+                        data: {
+                            state: "Karnataka",
+                            courseName: courseName
+
+                        },
+                        success: function (data) {
+                            $(".universityList").html(data);
+                        }
+                    });
+
+                } else {
+                    loadData();
+                }
+            });
+
+            let statePondicherry = $("#Pondicherry");
+
+
+            statePondicherry.change(function () {
+                if (statePondicherry.is(":checked")) {
+                    $.ajax({
+                        url: "allstatemedicalUniversity.php",
+                        type: "POST",
+                        data: {
+                            state: "Pondicherry",
+                            courseName: courseName
+
+                        },
+                        success: function (data) {
+                            $(".universityList").html(data);
+                        }
+                    });
+
+                } else {
+                    loadData();
+                }
+            });
+
+
+            let stateMaharashtra = $("#Maharashtra");
+
+
+            stateMaharashtra.change(function () {
+                if (stateMaharashtra.is(":checked")) {
+                    $.ajax({
+                        url: "allstatemedicalUniversity.php",
+                        type: "POST",
+                        data: {
+                            state: "Maharashtra",
+                            courseName: courseName
+
+                        },
+                        success: function (data) {
+                            $(".universityList").html(data);
+                        }
+                    });
+
+                } else {
+                    loadData();
+                }
+            });
+
+
+            let statePunjab = $("#Punjab");
+
+
+            statePunjab.change(function () {
+                if (statePunjab.is(":checked")) {
+                    $.ajax({
+                        url: "allstatemedicalUniversity.php",
+                        type: "POST",
+                        data: {
+                            state: "Punjab",
+                            courseName: courseName
+
+                        },
+                        success: function (data) {
+                            $(".universityList").html(data);
+                        }
+                    });
+
+                } else {
+                    loadData();
+                }
+            });
+
+
+
+            let stateHaryana = $("#Haryana");
+
+
+            stateHaryana.change(function () {
+                if (stateHaryana.is(":checked")) {
+                    $.ajax({
+                        url: "allstatemedicalUniversity.php",
+                        type: "POST",
+                        data: {
+                            state: "Haryana",
+                            courseName: courseName
+
+                        },
+                        success: function (data) {
+                            $(".universityList").html(data);
+                        }
+                    });
+
+                } else {
+                    loadData();
+                }
+            });
+
+
+            let stateGujarat = $("#Gujarat");
+
+
+            stateGujarat.change(function () {
+                if (stateGujarat.is(":checked")) {
+                    $.ajax({
+                        url: "allstatemedicalUniversity.php",
+                        type: "POST",
+                        data: {
+                            state: "Gujarat",
+                            courseName: courseName
+
+                        },
+                        success: function (data) {
+                            $(".universityList").html(data);
+                        }
+                    });
+
+                } else {
+                    loadData();
+                }
+            });
+
+
+
+            let stateKerala = $("#Kerala");
+
+
+            stateKerala.change(function () {
+                if (stateKerala.is(":checked")) {
+                    $.ajax({
+                        url: "allstatemedicalUniversity.php",
+                        type: "POST",
+                        data: {
+                            state: "Kerala",
+                            courseName: courseName
+
+                        },
+                        success: function (data) {
+                            $(".universityList").html(data);
+                        }
+                    });
+
+                } else {
+                    loadData();
+                }
+            });
+
+
+            let stateOrissa = $("#Orissa");
+
+
+            stateOrissa.change(function () {
+                if (stateOrissa.is(":checked")) {
+                    $.ajax({
+                        url: "allstatemedicalUniversity.php",
+                        type: "POST",
+                        data: {
+                            state: "Orissa",
+                            courseName: courseName
+
+                        },
+                        success: function (data) {
+                            $(".universityList").html(data);
+                        }
+                    });
+
+                } else {
+                    loadData();
+                }
+            });
+
+
+            let stateTelangana = $("#Telangana");
+
+
+            stateTelangana.change(function () {
+                if (stateTelangana.is(":checked")) {
+                    $.ajax({
+                        url: "allstatemedicalUniversity.php",
+                        type: "POST",
+                        data: {
+                            state: "Telangana",
+                            courseName: courseName
+
+                        },
+                        success: function (data) {
+                            $(".universityList").html(data);
+                        }
+                    });
+
+                } else {
+                    loadData();
+                }
+            });
+
+
+
+            let stateJharkhand = $("#Jharkhand");
+
+
+            stateJharkhand.change(function () {
+                if (stateJharkhand.is(":checked")) {
+                    $.ajax({
+                        url: "allstatemedicalUniversity.php",
+                        type: "POST",
+                        data: {
+                            state: "Jharkhand",
+                            courseName: courseName
+
+                        },
+                        success: function (data) {
+                            $(".universityList").html(data);
+                        }
+                    });
+
+                } else {
+                    loadData();
+                }
+            });
+
+
+            let stateRajasthan = $("#Rajasthan");
+
+
+            stateRajasthan.change(function () {
+                if (stateRajasthan.is(":checked")) {
+                    $.ajax({
+                        url: "allstatemedicalUniversity.php",
+                        type: "POST",
+                        data: {
+                            state: "Rajasthan",
+                            courseName: courseName
+
+                        },
+                        success: function (data) {
+                            $(".universityList").html(data);
+                        }
+                    });
+
+                } else {
+                    loadData();
+                }
+            });
+
+
+            let stateDelhi = $("#Delhi");
+
+
+            stateDelhi.change(function () {
+                if (stateDelhi.is(":checked")) {
+                    $.ajax({
+                        url: "allstatemedicalUniversity.php",
+                        type: "POST",
+                        data: {
+                            state: "Delhi",
+                            courseName: courseName
+
+                        },
+                        success: function (data) {
+                            $(".universityList").html(data);
+                        }
+                    });
+
+                } else {
+                    loadData();
+                }
+            });
+
+
+            let stateBihar = $("#Bihar");
+
+
+            stateBihar.change(function () {
+                if (stateBihar.is(":checked")) {
+                    $.ajax({
+                        url: "allstatemedicalUniversity.php",
+                        type: "POST",
+                        data: {
+                            state: "Bihar",
+                            courseName: courseName
+
+                        },
+                        success: function (data) {
+                            $(".universityList").html(data);
+                        }
+                    });
+
+                } else {
+                    loadData();
+                }
+            });
+
+
+
+            let stateChattisgarh = $("#Chattisgarh");
+
+
+            stateChattisgarh.change(function () {
+                if (stateChattisgarh.is(":checked")) {
+                    $.ajax({
+                        url: "allstatemedicalUniversity.php",
+                        type: "POST",
+                        data: {
+                            state: "Chattisgarh",
+                            courseName: courseName
+
+                        },
+                        success: function (data) {
+                            $(".universityList").html(data);
+                        }
+                    });
+
+                } else {
+                    loadData();
+                }
+            });
+
+
+            let stateAssam = $("#Assam");
+
+
+            stateAssam.change(function () {
+                if (stateAssam.is(":checked")) {
+                    $.ajax({
+                        url: "allstatemedicalUniversity.php",
+                        type: "POST",
+                        data: {
+                            state: "Assam",
+                            courseName: courseName
+
+                        },
+                        success: function (data) {
+                            $(".universityList").html(data);
+                        }
+                    });
+
+                } else {
+                    loadData();
+                }
+            });
+
+
+            let stateMeghalaya = $("#Meghalaya");
+
+
+            stateMeghalaya.change(function () {
+                if (stateMeghalaya.is(":checked")) {
+                    $.ajax({
+                        url: "allstatemedicalUniversity.php",
+                        type: "POST",
+                        data: {
+                            state: "Meghalaya",
+                            courseName: courseName
+
+                        },
+                        success: function (data) {
+                            $(".universityList").html(data);
+                        }
+                    });
+
+                } else {
+                    loadData();
+                }
+            });
+
+
+            let stateSikkim = $("#Sikkim");
+
+
+            stateSikkim.change(function () {
+                if (stateSikkim.is(":checked")) {
+                    $.ajax({
+                        url: "allstatemedicalUniversity.php",
+                        type: "POST",
+                        data: {
+                            state: "Sikkim",
+                            courseName: courseName
+
+                        },
+                        success: function (data) {
+                            $(".universityList").html(data);
+                        }
+                    });
+
+                } else {
+                    loadData();
+                }
+            });
+
+
+
+            let stateJammu = $("#JammuKashmir");
+
+
+            stateJammu.change(function () {
+                if (stateJammu.is(":checked")) {
+                    $.ajax({
+                        url: "allstatemedicalUniversity.php",
+                        type: "POST",
+                        data: {
+                            state: "Jammu & Kashmir",
+                            courseName: courseName
+
+                        },
+                        success: function (data) {
+                            $(".universityList").html(data);
+                        }
+                    });
+
+                } else {
+                    loadData();
+                }
+            });
+
+
+            let stateUttar_Pradesh = $("#Uttar_Pradesh");
+
+
+            stateUttar_Pradesh.change(function () {
+                if (stateUttar_Pradesh.is(":checked")) {
+                    $.ajax({
+                        url: "allstatemedicalUniversity.php",
+                        type: "POST",
+                        data: {
+                            state: "Uttar Pradesh",
+                            courseName: courseName
+
+                        },
+                        success: function (data) {
+                            $(".universityList").html(data);
+                        }
+                    });
+
+                } else {
+                    loadData();
+                }
+            });
+
+
+            let stateGoa = $("#Goa");
+
+
+            stateGoa.change(function () {
+                if (stateGoa.is(":checked")) {
+                    $.ajax({
+                        url: "allstatemedicalUniversity.php",
+                        type: "POST",
+                        data: {
+                            state: "Goa",
+                            courseName: courseName
+                        },
+                        success: function (data) {
+                            $(".universityList").html(data);
+                        }
+                    });
+
+                } else {
+                    loadData();
+                }
+            });
+        });
+    </script>
+
 </body>
+
 </html>

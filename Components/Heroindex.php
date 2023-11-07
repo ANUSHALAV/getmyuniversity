@@ -28,12 +28,13 @@ if (mysqli_num_rows($result)) {
                         </ul>
                         <div class="searchBar tab-content">
                             <div id="searchUnivercity" class="tab-pane show active">
-                                <form class="searchForm clearfix" role="form">
+                                <form class="searchForm clearfix"  role="form">
                                     <input class="form-control" placeholder="Search University" id="searchNames"
-                                        autocomplete="off" />
+                                        autocomplete="off"  required/>
                                     <input type="hidden" id="show_name_student" value="" />
-                                    <a class="btn searchBtn" href="public/full_college_detail.php" id="univercity"><i
-                                            class="fa fa-search"></i></a>
+
+                                    <a class="btn searchBtn" href="#"
+                                        id="univercity"><i class="fa fa-search"></i></a>
 
                                     <span class="error_message" id="searchNames_error" style="display:none; color:red;"> Search
                                         User name</span>
@@ -54,14 +55,14 @@ if (mysqli_num_rows($result)) {
 
                                     </ul>
                                     <input class="form-control" placeholder="Search Courses" id="searchCourse"
-                                        autocomplete="off" />
+                                        autocomplete="off" required/>
                                     <input type="hidden" id="show_name_student2" value="" />
                                     <span class="error_message" id="searchNames_error2" style="display:none; color:red;"> Search
                                         User name</span>
                                     <ul class="search_result" id="search_course_result">
 
                                     </ul>
-                                    <button class="btn searchBtn" type="button" id="univercity2"><i
+                                    <button class="btn searchBtn" type="button" id="univercitystate"><i
                                             class="fa fa-search"></i></button>
 
                                 </form>

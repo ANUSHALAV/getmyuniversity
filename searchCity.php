@@ -2,7 +2,7 @@
 
 $conn = mysqli_connect("localhost", "root", "", "collegs");
 $inputText = $_POST['inputText'];
-$query = "SELECT `id`,`state` FROM `universites` WHERE `state` LIKE '%$inputText%'";
+$query = "SELECT distinct(`state`) FROM `medical_in_india` WHERE `state` LIKE '%$inputText%'";
 
 $result = mysqli_query($conn, $query);
 $output = '';
@@ -15,7 +15,7 @@ if (mysqli_num_rows($result) > 0) {
     }
 } else {
     $output .= '
-    <li>data not found</li>
+    <li>Data Not Found</li>
     ';
 }
 $output .= '</ul>';

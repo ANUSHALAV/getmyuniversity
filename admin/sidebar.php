@@ -1,10 +1,4 @@
-<?php
 
-require_once '../connection/config.php';
-
-$link = new MySQLi(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -98,6 +92,7 @@ $link = new MySQLi(DB_HOST, DB_USER, DB_PASS, DB_NAME);
         videos</a></button>
     <button class='btn w-100 btn-dark  m-2'><a class='text-start' href="alluniversityvideos.php"> All University videos
       </a></button>
+    <button class='btn w-100 btn-dark  m-2'><a class='text-start' href="addblogs.php">Add blogs </a></button>
     <button class='btn w-100 btn-dark  m-2'><a class='text-start' href="allblogs.php">All blogs </a></button>
     <button class='btn w-100 btn-dark  m-2'><a class='text-start' href="editForum.php">Forum </a></button>
     <button class='btn w-100 btn-dark  m-2'><a class='text-start' href="editNavbar.php">Edit Navabar</a></button>

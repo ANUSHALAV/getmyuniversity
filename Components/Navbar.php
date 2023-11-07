@@ -120,12 +120,12 @@
                                         aria-hidden="true"></i></a>
                                 <span class="drop_btn" data-id="dropdown5"><i class="fa fa-angle-down"></i></span>
                                 <ul class="dropdown-menu" id="dropdown5">
-                                    <li class="nav-item"><a href="public\md-colleges.html">MD in India</a></li>
-                                    <li class="nav-item"><a href="public\ms-colleges.html">MS in India</a></li>
-                                    <li class="nav-item"><a href="public\dm-colleges.html">DM in India</a></li>
-                                    <li class="nav-item"><a href="public\mch-colleges.html">MCH in India</a></li>
-                                    <li class="nav-item"><a href="public\dip-colleges.html">DIP in India</a></li>
-                                    <li class="nav-item"><a href="public\mbbs-colleges.html">MBBS in India</a></li>
+                                    <li class="nav-item"><a href="public\mbbs-colleges.php?course_name=<?php echo 'MD' ?>">MD in India</a></li>
+                                    <li class="nav-item"><a href="public\mbbs-colleges.php?course_name=<?php echo 'MS' ?>">MS in India</a></li>
+                                    <li class="nav-item"><a href="public\mbbs-colleges.php?course_name=<?php echo 'DM' ?>">DM in India</a></li>
+                                    <li class="nav-item"><a href="public\mbbs-colleges.php?course_name=<?php echo 'MCH' ?>">MCH in India</a></li>
+                                    <li class="nav-item"><a href="public\mbbs-colleges.php?course_name=<?php echo 'DIP' ?>">DIP in India</a></li>
+                                    <li class="nav-item"><a href="public\mbbs-colleges.php?course_name=<?php echo 'MBBS' ?>">MBBS in India</a></li>
                                 </ul>
                             </li>
 

@@ -119,11 +119,22 @@
             });
 
 
-            // $("#univercity").on("click", () => {
+            $("#univercity").on("click", () => {
 
-            //     let inputData = $("#searchNames").val();
-            //     $(".clearfix").trigger("reset");
-            // });
+                let inputData = $("#searchNames").val();
+                window.location.href = "http://localhost/collegs/public/full_college_detail.php?college_name=" + inputData;
+                $(".clearfix").trigger("reset");
+
+            });
+
+            $("#univercitystate").on("click", () => {
+                let state = $("#searchStateCity").val();
+                let course = $("#searchCourse").val();
+
+               window.location.href="http://localhost/collegs/public/universitybystateandcourse.php?courseName="+course+"&stateName="+state;
+
+                $(".clearfix").trigger("reset");
+            });
 
 
             $("#search_state_city_result").hide();
@@ -179,13 +190,6 @@
                 $("#search_course_result").show();
             });
 
-            // $('#univercity1').click(function(){
-            //     //alert($('#show_name_student').val());
-            //     if($('#show_name_student1').val() == ''){
-            //         return false;
-            //     }
-            //     location.href = "https://www.getmyuniversity.com/medical-colleges-in-"+$('#show_name_student1').val()+'?'+$('#show_name_student2').val();
-            // });
 
             $('.reviewSlider').owlCarousel({
                 loop: false,

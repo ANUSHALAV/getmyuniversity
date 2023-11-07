@@ -10,6 +10,11 @@ if (isset($_POST['btn'])) {
     $established = $_POST['established'];
     $location_detail = $_POST['location_detail'];
     $courses = $_POST['courses'];
+    $affilated_by = $_POST['affilated_by'];
+    $college_email_id = $_POST['college_email_id'];
+    $about_the_college=$_POST['about_the_college'];
+    $about_the_faculty=$_POST['about_the_faculty'];
+    $conclusion=$_POST['conclusion'];
 
     $image = $_FILES['image']['tmp_name'];
 
@@ -22,7 +27,7 @@ if (isset($_POST['btn'])) {
     $collegeimageData = file_get_contents($collegeimage);
     $collegeimageData = mysqli_real_escape_string($conn, $collegeimageData);
 
-    $query = "INSERT INTO `medical_in_india`(`college_name`, `college_logo`, `state`, `addres`, `fee_per_year`, `ownership`,`established`,`college_img`,`location_detail`,`courses`) VALUES ('$collegeName','$imageData','$state','$addres','$fee','$ownership','$established','$collegeimageData','$location_detail','$courses')";
+    $query = "INSERT INTO `medical_in_india`(`college_name`, `college_logo`, `state`, `addres`, `fee_per_year`, `ownership`,`established`,`college_img`,`location_detail`,`courses`,`affilated_by`,`college_email_id`,`about_the_college`,`about_the_faculty`,conclusion) VALUES ('$collegeName','$imageData','$state','$addres','$fee','$ownership','$established','$collegeimageData','$location_detail','$courses','$affilated_by','$college_email_id','$about_the_college','$about_the_faculty','$conclusion')";
 
     if (mysqli_query($conn, $query)) {
         header('Location: http://localhost/collegs/admin/allIndiaUniversity.php');
@@ -89,11 +94,35 @@ if (isset($_POST['btn'])) {
                 <input type="text" class="form-control py-2" id="exampleFormControlInput1" name="established"
                     placeholder="college established in">
             </div>
-
+            <div class="mb-4">
+                <label for="exampleFormControlInput1" class="form-label">Affilated by</label>
+                <input type="text" class="form-control py-2" id="exampleFormControlInput1" name="affilated_by"
+                    placeholder="college affilated by">
+            </div>
+            <div class="mb-4">
+                <label for="exampleFormControlInput1" class="form-label">college offcial email id</label>
+                <input type="email" class="form-control py-2" id="exampleFormControlInput1" name="college_email_id"
+                    placeholder="college offcial email id">
+            </div>
+            <div class="mb-4">
+                <label for="exampleFormControlInput1" class="form-label">About the college</label>
+                <textarea type="text" class="form-control py-2" id="exampleFormControlInput1" name="about_the_college"
+                    placeholder="about the college" rows="10"></textarea>
+            </div>
+            <div class="mb-4">
+                <label for="exampleFormControlInput1" class="form-label">About the faculty</label>
+                <textarea type="text" class="form-control py-2" id="exampleFormControlInput1" name="about_the_faculty"
+                    placeholder="about the faculty" rows="10"></textarea>
+            </div>
+            <div class="mb-4">
+                <label for="exampleFormControlInput1" class="form-label">conclusion</label>
+                <textarea type="text" class="form-control py-2" id="exampleFormControlInput1" name="conclusion"
+                    placeholder="about the faculty" rows="10"></textarea>
+            </div>
             <div class="mb-4">
                 <label for="exampleFormControlInput1" class="form-label">college location detail</label>
-                <input type="text" class="form-control py-2" id="exampleFormControlInput1" name="location_detail"
-                    placeholder="college location detail">
+                <textarea type="text" class="form-control py-2" id="exampleFormControlInput1" name="location_detail"
+                    placeholder="college location detail" rows="10"></textarea>
             </div>
 
             <div class="mb-4">

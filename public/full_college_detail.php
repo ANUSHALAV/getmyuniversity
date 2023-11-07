@@ -190,66 +190,16 @@
                                         <?php echo $row['college_name']; ?>
                                     </h2>
                                     <p style="text-align:justify"><span style="font-family:Verdana,Geneva,sans-serif"><span
-                                                style="font-size:16px">The All India Institute of Medical Sciences (AIIMS) in
-                                                Guwahati was established in 2012. In these 11 years of excellence, the college
-                                                has become one of the most prestigious branches of AIIMS. It aims to provide
-                                                high-quality medical education, and advanced healthcare services and contribute
-                                                to medical research and innovation.</span></span></p>
+                                                style="font-size:16px"><?php  echo $row['about_the_college'] ?></span></span></p>
 
                                     <p style="text-align:justify"><span style="font-family:Verdana,Geneva,sans-serif"><span
-                                                style="font-size:16px">AIIMS Guwahati is known for its state-of-the-art
-                                                infrastructure and facilities. The college campus is equipped with modern
-                                                lecture halls, well-equipped laboratories, advanced research facilities, and a
-                                                well-stocked library. These resources support effective teaching, learning, and
-                                                research activities for the students and faculty.</span></span></p>
+                                                style="font-size:16px"><?php  echo $row['about_the_faculty'] ?></span></span></p>
 
+                                
                                     <p style="text-align:justify"><span style="font-family:Verdana,Geneva,sans-serif"><span
-                                                style="font-size:16px">The faculty at AIIMS Guwahati is highly qualified and
-                                                experienced. The institution attracts renowned professors, doctors, and
-                                                researchers who bring their expertise and knowledge to impart comprehensive
-                                                medical education to the students. The faculty members play a
-                                                pivotal&nbsp;</span></span><span
-                                            style="font-family:Verdana,Geneva,sans-serif"><span style="font-size:16px">role in
-                                                mentoring and guiding the students, ensuring a holistic learning
-                                                experience.</span></span></p>
+                                                style="font-size:16px"><?php  echo $row['conclusion'] ?></span></span></p>
 
-                                    <p style="text-align:justify"><span style="font-family:Verdana,Geneva,sans-serif"><span
-                                                style="font-size:16px">AIIMS Guwahati has a fully functional teaching hospital
-                                                associated with it, known as AIIMS Bhubaneswar. The hospital provides tertiary
-                                                care services to the patients and serves as a practical learning ground for the
-                                                students. Students get hands-on clinical training and exposure to diverse
-                                                patient cases under the supervision of experienced medical
-                                                professionals.</span></span></p>
-
-                                    <p style="text-align:justify"><span style="font-family:Verdana,Geneva,sans-serif"><span
-                                                style="font-size:16px">The college offers undergraduate (MBBS) and postgraduate
-                                                (MD/MS) programs in various medical disciplines. The MBBS program follows a
-                                                comprehensive curriculum that combines theoretical knowledge with practical
-                                                training. The postgraduate programs provide opportunities for specialization and
-                                                advanced training in specific medical fields.</span></span></p>
-
-                                    <p style="text-align:justify"><span style="font-family:Verdana,Geneva,sans-serif"><span
-                                                style="font-size:16px">AIIMS Guwahati is affiliated with the All India Institute
-                                                of Medical Sciences, New Delhi, which ensures that the college follows a
-                                                standardized curriculum and maintains high academic
-                                                standards.&nbsp;</span></span></p>
-
-                                    <p style="text-align:justify"><span style="font-family:Verdana,Geneva,sans-serif"><span
-                                                style="font-size:16px">The institution emphasizes research and innovation. AIIMS
-                                                Guwahati encourages a research-oriented approach to address regional healthcare
-                                                challenges, contribute to medical advancements, and improve patient
-                                                care.</span></span></p>
-
-                                    <p style="text-align:justify"><span style="font-family:Verdana,Geneva,sans-serif"><span
-                                                style="font-size:16px">In conclusion, AIIMS Guwahati is a prestigious medical
-                                                institution offering high-quality medical education, advanced healthcare
-                                                services, and opportunities for research and innovation. With its modern
-                                                infrastructure, experienced faculty, and association with a well-equipped
-                                                teaching hospital, AIIMS Guwahati aims to produce skilled and compassionate
-                                                healthcare professionals who can meet the healthcare needs of the region and
-                                                contribute to the field of medicine.</span></span></p>
-
-                                    <p style="text-align:justify"><span style="font-size:18px"><span
+                                    <p style="text-align:justify"><span style="font-size:25px; font-weight:bold;"><span
                                                 style="font-family:Verdana,Geneva,sans-serif">
                                                 <?php echo $row['college_name'] ?> Location
                                                 Details
@@ -283,7 +233,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td><strong>&nbsp;Affiliated By</strong></td>
-                                                    <td>&nbsp;Statutory Autonomous AIIMS (Bilaspur)</td>
+                                                    <td>&nbsp;<?php  echo $row['affilated_by'] ?></td>
                                                 </tr>
                                                 <tr>
                                                     <td><strong>&nbsp;College Category</strong></td>
@@ -450,7 +400,7 @@
                                         </p>
                                         <p><a href="https://goo.gl/maps/r4wtXg8yiWpP5U2b9">View on Map</a></p>
                                         <p><strong><i class="fa fa-envelope mr-2"></i>Email</strong>
-                                            <a href="#">director[at]aiimsguwahati.ac.in</a>
+                                            <a href="#"><?php  echo $row['college_email_id'] ?></a>
                                         </p>
                                     </div>
                                 </div>

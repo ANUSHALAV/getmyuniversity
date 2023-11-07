@@ -81,8 +81,8 @@
                                 <img width="70px" height="60px"
                                     src="data:image/jpeg;base64,<?php echo base64_encode($row['college_img']); ?>">
                             </td>
-                            <td><a href="" class="btn btn-primary" id="<?php echo $row['id'] ?>">edit</a></td>
-                            <td><a href="" class="btn btn-danger" id="<?php echo $row['id'] ?>">delete</a></td>
+                            <td><a href="edit_indian_medical_collge.php?id=<?php echo $row['id'] ?>" class="btn btn-primary" id="<?php echo $row['id'] ?>">edit</a></td>
+                            <td><a href="delete_indian_medical_college.php?id=<?php echo $row['id'] ?>" class="btn btn-danger" id="<?php echo $row['id'] ?>">delete</a></td>
                         </tr>
                     <?php }
                 }

@@ -55,8 +55,8 @@
                                 <img width="70px" height="60px"
                                     src="data:image/jpeg;base64,<?php echo base64_encode($row['college_image']); ?>">
                             </td>
-                            <td><a href="" class="btn btn-primary" id="<?php echo $row['id'] ?>">edit</a></td>
-                            <td><a href="" class="btn btn-danger" id="<?php echo $row['id'] ?>">delete</a></td>
+                            <td><a href="editgallery.php?id=<?php echo $row['id'] ?>" class="btn btn-primary" id="<?php echo $row['id'] ?>">edit</a></td>
+                            <td><a href="deletegallery.php?id=<?php echo $row['id'] ?>" class="btn btn-danger" id="<?php echo $row['id'] ?>">delete</a></td>
                         </tr>
                     <?php }
                 }

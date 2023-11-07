@@ -70,11 +70,7 @@
     font-style: normal;
     font-display: swap;
 }
-:root {
-    --theme-color: #de2a1b;
-    --theme-family: 'Rubik', sans-serif;
 
-}
 body {
     color: #2f2f2f;
     font-size: 15px;
@@ -971,6 +967,7 @@ ul.search_result li:hover {
 }
 .countryList .item {
     background: #110b44;
+    object-fit: cover !important;
     border-radius: 16px;
     padding: 20px;
     width: calc(20% - 15px);
@@ -982,7 +979,10 @@ ul.search_result li:hover {
     margin-bottom: 30px;
 }
 .countryList .item img {
-    max-width: 100px;
+    max-width: 101px !important;
+    max-height: 101px !important;
+    min-width: 100px !important;
+    min-height: 100px !important;
     margin: 0 auto;
     border-radius: 50%;
     border: 3px solid #efe0d1;
