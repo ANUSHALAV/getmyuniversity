@@ -175,6 +175,9 @@ if (isset($_POST['btn'])) {
                     <option value="Pondicherry">Pondicherry</option>
                 </select>
             </div>
+            <div class="mb-5">
+                
+            </div>
 
             <div>
                 <input type="submit" class="btn btn-outline-danger w-25" name="btn">

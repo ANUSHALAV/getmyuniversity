@@ -188,16 +188,7 @@
                                 </ul>
                             </li>
 
-                            <!-- <li class="dropdown_item nav-item">
-                                <a class="nav-link" href="#">Student Area <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                <span class="drop_btn" data-id="dropdown5"><i class="fa fa-angle-down"></i></span>
-                                <ul class="dropdown-menu" id="dropdown5">
-                                    <li class="nav-item"><a href="#">Webinars</a></li>
-                                    <li class="nav-item"><a href="#">MBBS Books</a></li>
-                                    <li class="nav-item"><a href="#">Language</a></li>
-                                    <li class="nav-item"><a href="#">Notifications</a></li>
-                                </ul>
-                            </li> -->
+                          
 
                             <li class="dropdown_item nav-item">
                                 <a class="nav-link" href="videos.html">Videos <i class="fa fa-angle-down"
@@ -215,8 +206,8 @@
                                             Updates</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="public/blog.html">Blog</a></li>
-                            <li class="nav-item"><a class="nav-link" href="public/contact-us.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="blogs.php">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contectus.php">Contact</a></li>
                             <li class="nav-item"><a class="nav-link searchBtn" data-toggle="modal"
                                     href="#searchModal"><i class="fa fa-search"></i></a></li>
                         </ul>
@@ -241,11 +232,7 @@
                     $("#univercity").click();
                 }
             });
-            // $("#searchNames1").keyup(function(event) {
-            //     if (event.keyCode === 13) {
-            //         $("#univercity1").click();
-            //     }
-            // });
+          
             $('#univercity').click(function () {
                 //alert($('#show_name_student').val());
                 if ($('#show_name_student').val() == '') {
@@ -253,21 +240,7 @@
                 }
                 location.href = "https://www.getmyuniversity.com/university" + '/' + $('#show_name_student').val();
             });
-            // $('#univercity1').click(function(){
-            //     //alert($('#show_name_student').val());
-            //     if($('#show_name_student1').val() == ''){
-            //         return false;
-            //     }
-            //     location.href = "https://www.getmyuniversity.com/university"+'/'+$('#show_name_student1').val();
-            // });
-
-            // $('#univercity1').click(function(){
-            //     //alert($('#show_name_student').val());
-            //     if($('#show_name_student1').val() == ''){
-            //         return false;
-            //     }
-            //     location.href = "https://www.getmyuniversity.com/medical-colleges-in-"+$('#show_name_student1').val()+'?'+$('#show_name_student2').val();
-            // });
+            
 
             $('.reviewSlider').owlCarousel({
                 loop: false,
@@ -341,9 +314,7 @@
                             });
                         },
                         error: function (response) {
-                            //$("#LoadingImage").hide();
-                            //alert("Error");
-                            //var NewSTIEURL = STIEURL+'/ajax_model_type';
+                           
                         }
                     });
                 }, 10);
@@ -370,9 +341,7 @@
                                 });
                             },
                             error: function (response) {
-                                //$("#LoadingImage").hide();
-                                //alert("Error");
-                                //var NewSTIEURL = STIEURL+'/ajax_model_type';
+                                
                             }
                         });
                     }, 10);

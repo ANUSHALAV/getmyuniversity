@@ -17,24 +17,45 @@ if (isset($_POST['btn'])) {
     $about_the_faculty = $_POST['about_the_faculty'];
     $conclusion = $_POST['conclusion'];
 
-    $image = $_FILES['image']['tmp_name'];
 
-    $imageData = file_get_contents($image);
-    $imageData = mysqli_real_escape_string($conn, $imageData);
+    if (isset($_FILES["image"]["tmp_name"]) && !empty($_FILES["image"]["tmp_name"])) {
+        $image = $_FILES['image']['tmp_name'];
+        $imageData = file_get_contents($image);
+        $imageData = mysqli_real_escape_string($conn, $imageData);
+
+        $updateimage = "UPDATE `medical_in_india` SET `college_logo`='$imageData' WHERE `id`='$id'";
+        if (mysqli_query($conn, $updateimage)) {
+            header('Location: http://localhost/collegs/admin/allIndiaUniversity.php');
+        } else {
+            echo '<script>console.log("Cannot insert data successfully...");</script>';
+        }
 
 
-    $collegeimage = $_FILES['college_img']['tmp_name'];
+    }
+    if (isset($_FILES["college_img"]["tmp_name"]) && !empty($_FILES["college_img"]["tmp_name"])) {
+        $collegeimage = $_FILES['college_img']['tmp_name'];
 
-    $collegeimageData = file_get_contents($collegeimage);
-    $collegeimageData = mysqli_real_escape_string($conn, $collegeimageData);
+        $collegeimageData = file_get_contents($collegeimage);
+        $collegeimageData = mysqli_real_escape_string($conn, $collegeimageData);
 
-    $query = "UPDATE `medical_in_india` SET `college_name`='$collegeName', `college_logo`='$imageData', `state`='$state', `addres`='$addres', `fee_per_year`='$fee', `ownership`='$ownership',`established`='$established',`college_img`='$collegeimageData',`location_detail`='$location_detail',`courses`='$courses',`affilated_by`='$affilated_by',`college_email_id`='$college_email_id',`about_the_college`='$about_the_college',`about_the_faculty`='$about_the_faculty',`conclusion`='$conclusion' WHERE `id`='$id'";
+        $updateimage = "UPDATE `medical_in_india` SET `college_img`='$collegeimageData' WHERE `id`='$id'";
+        if (mysqli_query($conn, $updateimage)) {
+            header('Location: http://localhost/collegs/admin/allIndiaUniversity.php');
+        } else {
+            echo '<script>console.log("Cannot insert data successfully...");</script>';
+        }
+    }
+
+
+    $query = "UPDATE `medical_in_india` SET `college_name`='$collegeName', `state`='$state', `addres`='$addres', `fee_per_year`='$fee', `ownership`='$ownership',`established`='$established',`location_detail`='$location_detail',`courses`='$courses',`affilated_by`='$affilated_by',`college_email_id`='$college_email_id',`about_the_college`='$about_the_college',`about_the_faculty`='$about_the_faculty',`conclusion`='$conclusion' WHERE `id`='$id'";
 
     if (mysqli_query($conn, $query)) {
         header('Location: http://localhost/collegs/admin/allIndiaUniversity.php');
     } else {
         echo '<script>console.log("Cannot insert data successfully...");</script>';
     }
+
+
 }
 ?>
 
@@ -68,7 +89,7 @@ if (isset($_POST['btn'])) {
 
 
             <div class="container">
-                <h3 class="my-5">Edit indain medical college</h3>
+                <h2 class="my-5 fw-bold">Edit indain medical college</h2>
                 <form action="" class="text-capitalize" enctype="multipart/form-data" method="post">
                     <div class="mb-4">
                         <label for="exampleFormControlInput1" class="form-label">college name</label>
@@ -89,11 +110,19 @@ if (isset($_POST['btn'])) {
                     <div class="mb-4">
                         <label for="exampleFormControlInput1" class="form-label">college logo</label>
                         <input type="file" class="form-control py-2" id="exampleFormControlInput1" name="image">
+                        <div>
+                            <img src="data:image/jpeg;base64,<?php echo base64_encode($row['college_logo']); ?>" alt=""
+                                height="60px" width="50px">
+                        </div>
                     </div>
 
                     <div class="mb-4">
                         <label for="exampleFormControlInput1" class="form-label">college image</label>
                         <input type="file" class="form-control py-2" id="exampleFormControlInput1" name="college_img">
+                        <div>
+                            <img src="data:image/jpeg;base64,<?php echo base64_encode($row['college_img']); ?>" alt=""
+                                height="60px" width="50px">
+                        </div>
                     </div>
 
                     <div class="mb-4">
@@ -116,27 +145,27 @@ if (isset($_POST['btn'])) {
                     <div class="mb-4">
                         <label for="exampleFormControlInput1" class="form-label">Affilated by</label>
                         <input type="text" class="form-control py-2" id="exampleFormControlInput1" name="affilated_by"
-                            placeholder="college affilated by" value="<?php  echo $row['affilated_by'] ?>">
+                            placeholder="college affilated by" value="<?php echo $row['affilated_by'] ?>">
                     </div>
                     <div class="mb-4">
                         <label for="exampleFormControlInput1" class="form-label">college offcial email id</label>
                         <input type="email" class="form-control py-2" id="exampleFormControlInput1" name="college_email_id"
-                            placeholder="college offcial email id" value="<?php  echo $row['college_email_id'] ?>">
+                            placeholder="college offcial email id" value="<?php echo $row['college_email_id'] ?>">
                     </div>
                     <div class="mb-4">
                         <label for="exampleFormControlInput1" class="form-label">About the college</label>
                         <textarea type="text" class="form-control py-2" id="exampleFormControlInput1" name="about_the_college"
-                            placeholder="about the college" rows="10"><?php  echo $row['about_the_college'] ?></textarea>
+                            placeholder="about the college" rows="10"><?php echo $row['about_the_college'] ?></textarea>
                     </div>
                     <div class="mb-4">
                         <label for="exampleFormControlInput1" class="form-label">About the faculty</label>
                         <textarea type="text" class="form-control py-2" id="exampleFormControlInput1" name="about_the_faculty"
-                            placeholder="about the faculty" rows="10"><?php  echo $row['about_the_faculty'] ?></textarea>
+                            placeholder="about the faculty" rows="10"><?php echo $row['about_the_faculty'] ?></textarea>
                     </div>
                     <div class="mb-4">
                         <label for="exampleFormControlInput1" class="form-label">conclusion</label>
                         <textarea type="text" class="form-control py-2" id="exampleFormControlInput1" name="conclusion"
-                            placeholder="about the faculty" rows="10"><?php  echo $row['conclusion'] ?></textarea>
+                            placeholder="about the faculty" rows="10"><?php echo $row['conclusion'] ?></textarea>
                     </div>
 
                     <div class="mb-4">

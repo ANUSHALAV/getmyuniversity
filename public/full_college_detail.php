@@ -209,6 +209,7 @@
                                                 style="font-size:16px">
                                                 <?php echo $row['location_detail'] ?>
                                             </span></span></p>
+                                            
 
                                     <div class="info_table">
                                         <table class="table align-middle mb-0">

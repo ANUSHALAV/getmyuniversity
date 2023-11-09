@@ -122,6 +122,11 @@
             $("#univercity").on("click", () => {
 
                 let inputData = $("#searchNames").val();
+
+                if(inputData.length==0){
+                    alert("please enter the university name");
+                    return false;
+                }
                 window.location.href = "http://localhost/collegs/public/full_college_detail.php?college_name=" + inputData;
                 $(".clearfix").trigger("reset");
 
@@ -130,6 +135,11 @@
             $("#univercitystate").on("click", () => {
                 let state = $("#searchStateCity").val();
                 let course = $("#searchCourse").val();
+
+                if(state.length==0 ||course.length==0){
+                    alert("please enter the state and course");
+                    return false;
+                }
 
                window.location.href="http://localhost/collegs/public/universitybystateandcourse.php?courseName="+course+"&stateName="+state;
 
