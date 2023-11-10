@@ -26,6 +26,8 @@
                     <th scope="col">video heading</th>
                     <th scope="col">video link</th>
                     <th scope="col">video thambnail</th>
+                    <th scope="col">video post date</th>
+                    <th scope="col">video related on</th>
                 </tr>
             </thead>
             <tbody>
@@ -56,6 +58,12 @@
                             <td>
                                 <img width="70px" height="60px"
                                     src="data:image/jpeg;base64,<?php echo base64_encode($row['video_thumbnail']); ?>">
+                            </td>
+                            <td>
+                                <?php echo $row['video_post_date'] ?>
+                            </td>
+                            <td>
+                                <?php echo $row['video_related_on']; ?>
                             </td>
                             <td><a href="edituniversityvideo.php?id=<?php echo $row['id']?>" class="btn btn-primary" id="<?php echo $row['id'] ?>">edit</a></td>
                             <td><a href="deleteuniversityvideo.php?id=<?php echo $row['id']?>" class="btn btn-danger" id="<?php echo $row['id'] ?>">delete</a></td>

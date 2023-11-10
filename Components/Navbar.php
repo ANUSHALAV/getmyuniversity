@@ -120,12 +120,24 @@
                                         aria-hidden="true"></i></a>
                                 <span class="drop_btn" data-id="dropdown5"><i class="fa fa-angle-down"></i></span>
                                 <ul class="dropdown-menu" id="dropdown5">
-                                    <li class="nav-item"><a href="public\mbbs-colleges.php?course_name=<?php echo 'MD' ?>">MD in India</a></li>
-                                    <li class="nav-item"><a href="public\mbbs-colleges.php?course_name=<?php echo 'MS' ?>">MS in India</a></li>
-                                    <li class="nav-item"><a href="public\mbbs-colleges.php?course_name=<?php echo 'DM' ?>">DM in India</a></li>
-                                    <li class="nav-item"><a href="public\mbbs-colleges.php?course_name=<?php echo 'MCH' ?>">MCH in India</a></li>
-                                    <li class="nav-item"><a href="public\mbbs-colleges.php?course_name=<?php echo 'DIP' ?>">DIP in India</a></li>
-                                    <li class="nav-item"><a href="public\mbbs-colleges.php?course_name=<?php echo 'MBBS' ?>">MBBS in India</a></li>
+                                    <li class="nav-item"><a
+                                            href="public\mbbs-colleges.php?course_name=<?php echo 'MD' ?>">MD in
+                                            India</a></li>
+                                    <li class="nav-item"><a
+                                            href="public\mbbs-colleges.php?course_name=<?php echo 'MS' ?>">MS in
+                                            India</a></li>
+                                    <li class="nav-item"><a
+                                            href="public\mbbs-colleges.php?course_name=<?php echo 'DM' ?>">DM in
+                                            India</a></li>
+                                    <li class="nav-item"><a
+                                            href="public\mbbs-colleges.php?course_name=<?php echo 'MCH' ?>">MCH in
+                                            India</a></li>
+                                    <li class="nav-item"><a
+                                            href="public\mbbs-colleges.php?course_name=<?php echo 'DIP' ?>">DIP in
+                                            India</a></li>
+                                    <li class="nav-item"><a
+                                            href="public\mbbs-colleges.php?course_name=<?php echo 'MBBS' ?>">MBBS in
+                                            India</a></li>
                                 </ul>
                             </li>
 
@@ -178,7 +190,9 @@
                                     if (mysqli_num_rows($result) > 0) {
                                         while ($row = mysqli_fetch_array($result)) { ?>
 
-                                            <li class="nav-item"><a href="abroad/mbbs-in-abrod.php?country_name=<?php echo $row['Country_name'] ?>">MBBS in
+                                            <li class="nav-item"><a
+                                                    href="abroad/mbbs-in-abrod.php?country_name=<?php echo $row['Country_name'] ?>">MBBS
+                                                    in
                                                     <?php echo $row['Country_name']; ?>
                                                 </a></li>
                                             <?php
@@ -188,21 +202,31 @@
                                 </ul>
                             </li>
 
-                          
+
 
                             <li class="dropdown_item nav-item">
-                                <a class="nav-link" href="videos.html">Videos <i class="fa fa-angle-down"
+                                <a class="nav-link" href="#">Videos <i class="fa fa-angle-down"
                                         aria-hidden="true"></i></a>
                                 <span class="drop_btn" data-id="dropdown5"><i class="fa fa-angle-down"></i></span>
                                 <ul class="dropdown-menu" id="dropdown5">
-                                    <li class="nav-item"><a href="videos/medical-college-review.html">Medical College
+                                    <li class="nav-item"><a
+                                            href="medical-college-review.php?review=<?php echo 'medical college review' ?>">Medical
+                                            College
                                             Review</a></li>
-                                    <li class="nav-item"><a href="videos/neet-pg-counselling.html">NEET PG
+                                    <li class="nav-item"><a
+                                            href="medical-college-review.php?review=<?php echo 'Neet PG Counselling' ?>">NEET
+                                            PG
                                             Counselling</a></li>
-                                    <li class="nav-item"><a href="videos/neet-ug-counselling.html">NEET UG
+                                    <li class="nav-item"><a
+                                            href="medical-college-review.php?review=<?php echo 'Neet UG Counselling' ?>">NEET
+                                            UG
                                             Counselling</a></li>
-                                    <li class="nav-item"><a href="videos/mbbs-abroad.html">MBBS Abroad</a></li>
-                                    <li class="nav-item"><a href="videos/neet-ug-2023-updates.html">NEET UG 2023
+                                    <li class="nav-item"><a
+                                            href="medical-college-review.php?review=<?php echo 'mbbs abroad' ?>">MBBS
+                                            Abroad</a></li>
+                                    <li class="nav-item"><a
+                                            href="medical-college-review.php?review=<?php echo 'neet ug 2023 updates' ?>">NEET UG
+                                            2023
                                             Updates</a></li>
                                 </ul>
                             </li>
@@ -232,7 +256,7 @@
                     $("#univercity").click();
                 }
             });
-          
+
             $('#univercity').click(function () {
                 //alert($('#show_name_student').val());
                 if ($('#show_name_student').val() == '') {
@@ -240,7 +264,7 @@
                 }
                 location.href = "https://www.getmyuniversity.com/university" + '/' + $('#show_name_student').val();
             });
-            
+
 
             $('.reviewSlider').owlCarousel({
                 loop: false,
@@ -314,7 +338,7 @@
                             });
                         },
                         error: function (response) {
-                           
+
                         }
                     });
                 }, 10);
@@ -341,7 +365,7 @@
                                 });
                             },
                             error: function (response) {
-                                
+
                             }
                         });
                     }, 10);

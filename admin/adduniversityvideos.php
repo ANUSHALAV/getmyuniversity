@@ -6,12 +6,14 @@ if (isset($_POST['btn'])) {
 
     $heading = $_POST['video_heading'];
     $video_link = $_POST['video_link'];
+    $video_related_on = $_POST['video_related_on'];
+    $video_post_date=$_POST['video_post_date'];
     $thumbnail_img = $_FILES['thumbnail_img']['tmp_name'];
 
-    $imageData=file_get_contents($thumbnail_img);
-    $imagaData=mysqli_escape_string($conn, $imageData);
+    $imageData = file_get_contents($thumbnail_img);
+    $imagaData = mysqli_escape_string($conn, $imageData);
 
-    $query = "INSERT INTO `university_videos`(`video_heading`, `video_link`, `video_thumbnail`) VALUES ('$heading','$video_link','$imagaData')";
+    $query = "INSERT INTO `university_videos`(`video_heading`, `video_link`, `video_thumbnail`,`video_related_on`) VALUES ('$heading','$video_link','$imagaData','$video_related_on')";
 
     $result = mysqli_query($conn, $query);
 
@@ -53,8 +55,24 @@ if (isset($_POST['btn'])) {
                 <input type="url" class="form-control" id="exampleInputPassword1" name="video_link">
             </div>
             <div class="mb-4">
+                <label for="exampleInputEmail1" class="form-label">Video post date</label>
+                <input type="date" class="form-control" id="exampleInputPassword1" name="video_post_date"
+                    value="<?php echo $row['video_post_date'] ?>">
+            </div>
+            <div class="mb-4">
                 <label class="form-label" for="exampleInputEmail">video Thumbnail</label>
                 <input type="file" class="form-control" id="exampleCheck1" name="thumbnail_img">
+            </div>
+            <div class="mb-4">
+                <label for="" class="form-lable">Which Topic Related Video You Want To Post</label>
+                <select class="form-select" aria-label="Default select example" name="video_related_on">
+                    <option selected>Open this select menu</option>
+                    <option value="Medical College Review">medical college review</option>
+                    <option value="Neet PG Counselling">Neet PG Counselling</option>
+                    <option value="Neet UG Counselling">Neet UG Counselling</option>
+                    <option value="MBBS Abroad">MBBS Abroad</option>
+                    <option value="Neet UG 2023 Updates">Neet UG 2023 Updates</option>
+                </select>
             </div>
             <button type="submit" class="btn btn-danger" name="btn">Submit</button>
         </form>
