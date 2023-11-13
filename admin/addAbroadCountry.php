@@ -1,5 +1,5 @@
 <?php
-include 'sidebar.php';
+
 
 // Define database connection details
 $host = "localhost";
@@ -47,60 +47,74 @@ $result = $conn->query($selectQuery);
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Upload and Display Image</title>
     <!-- Add Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
+
 <body>
-    <div class="container mt-5">
-        <h2>Upload and Display Image</h2>
+    <div class="d-flex justify-content-between">
+        <div class="w-25">
+            <?php
+            include 'sidebar.php'; ?>
+        </div>
+        <div class="container mt-5 w-75">
+            <h2>Upload and Display Image</h2>
 
-        <!-- Display the upload form -->
-        <form action="" method="POST" enctype="multipart/form-data">
-            <div class="form-group">
-                <label for="countryName">Country Name:</label>
-                <input type="text" class="form-control" id="countryName" name="countryName">
-            </div>
-            <div class="form-group">
-                <label for="imageUpload">Upload Image:</label>
-                <input type="file" class="form-control-file" id="imageUpload" name="imageUpload">
-            </div>
-            <div class="form-group">
-                <label for="courseName">Course Name:</label>
-                <input type="text" class="form-control" id="courseName" name="courseName">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-
-        <!-- Display the records in a table with edit and delete options -->
-        <?php if ($result->num_rows > 0) { ?>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Country Name</th>
-                        <th>Course Name</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php while ($row = $result->fetch_assoc()) { ?>
+            <!-- Display the upload form -->
+            <form action="" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="countryName">Country Name:</label>
+                    <input type="text" class="form-control" id="countryName" name="countryName">
+                </div>
+                <div class="form-group">
+                    <label for="imageUpload">Upload Image:</label>
+                    <input type="file" class="form-control-file" id="imageUpload" name="imageUpload">
+                </div>
+                <div class="form-group">
+                    <label for="courseName">Course Name:</label>
+                    <input type="text" class="form-control" id="courseName" name="courseName">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            
+            <!-- Display the records in a table with edit and delete options -->
+            <?php if ($result->num_rows > 0) { ?>
+                <table class="table mt-4">
+                    <thead>
                         <tr>
-                            <td><?= $row["Country_name"] ?></td>
-                            <td><?= $row["Course_Name"] ?></td>
-                            <td>
-                                <a href="editAbroad.php?id=<?= $row["ID"] ?>" class="btn btn-primary">Edit</a>
-                                <a href="deleteAbroad.php?id=<?= $row["ID"] ?>" class="btn btn-danger">Delete</a>
-                            </td>
+                            <th>Country Name</th>
+                            <th>Course Name</th>
+                            <th>Action</th>
                         </tr>
-                    <?php } ?>
-                </tbody>
-            </table>
-        <?php } else {
-            echo "No records found.";
-        } ?>
+                    </thead>
+                    <tbody>
+                        <?php while ($row = $result->fetch_assoc()) { ?>
+                            <tr>
+                                <td>
+                                    <?= $row["Country_name"] ?>
+                                </td>
+                                <td>
+                                    <?= $row["Course_Name"] ?>
+                                </td>
+                                <td>
+                                    <a href="editAbroad.php?id=<?= $row["ID"] ?>" class="btn btn-primary">Edit</a>
+                                    <a href="deleteAbroad.php?id=<?= $row["ID"] ?>" class="btn btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                        <?php } ?>
+                    </tbody>
+                </table>
+            <?php } else {
+                echo "No records found.";
+            } ?>
+        </div>
     </div>
+
 </body>
+
 </html>
 
 <?php
