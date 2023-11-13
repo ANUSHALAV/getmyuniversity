@@ -39,47 +39,52 @@ if (isset($_POST['btn'])) {
 
 <body>
 
-    <?php
-    include 'sidebar.php'
-        ?>
-
-    <?php
-
-    $conn = mysqli_connect('localhost', 'root', '', 'collegs');
-
-    $id = $_REQUEST['id'];
-    $query = "SELECT * FROM `gallery` WHERE `id`='$id'";
-    $result = mysqli_query($conn, $query);
-    if (mysqli_num_rows($result) > 0) {
-        while ($row = mysqli_fetch_array($result)) { ?>
-
-            <div class="container my-4">
-                <h2 class="fw-bold text-capitalize py-5">edit gallery</h2>
-                <form action="" enctype="multipart/form-data" method="post">
-                    <div class="mb-4">
-                        <input type="hidden" class="form-control" id="exampleFormControlInput1"
-                            value="<?php echo $row['id'] ?>" name="id">
-                    </div>
-
-                    <div class="mb-4">
-                        <label for="exampleFormControlInput1" class="form-label">college Image</label>
-                        <input type="file" class="form-control" id="exampleFormControlInput1" name="college_img">
-                    </div>
-                    <div class="mb-4">
-                        <label for="exampleFormControlTextarea1" class="form-label">college name</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="college name"
-                            name="college_name" value="<?php echo $row['college_name'] ?> ">
-                    </div>
-
-                    <div class="mb-3">
-                        <input type="submit" class="btn btn-outline-danger" name="btn">
-                    </div>
-                </form>
-            </div>
-
+    <div class="d-flex justify-content-between">
+        <div class="w-25">
             <?php
-        }
-    } ?>
+            include 'sidebar.php'
+                ?>
+        </div>
+        <?php
+
+        $conn = mysqli_connect('localhost', 'root', '', 'collegs');
+
+        $id = $_REQUEST['id'];
+        $query = "SELECT * FROM `gallery` WHERE `id`='$id'";
+        $result = mysqli_query($conn, $query);
+        if (mysqli_num_rows($result) > 0) {
+            while ($row = mysqli_fetch_array($result)) { ?>
+
+                <div class="container my-4 w-75">
+                    <h2 class="fw-bold text-capitalize py-5">edit gallery</h2>
+                    <form action="" enctype="multipart/form-data" method="post">
+                        <div class="mb-4">
+                            <input type="hidden" class="form-control" id="exampleFormControlInput1"
+                                value="<?php echo $row['id'] ?>" name="id">
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="exampleFormControlInput1" class="form-label">college Image</label>
+                            <input type="file" class="form-control" id="exampleFormControlInput1" name="college_img">
+                        </div>
+                        <div class="mb-4">
+                            <label for="exampleFormControlTextarea1" class="form-label">college name</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="college name"
+                                name="college_name" value="<?php echo $row['college_name'] ?> ">
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="submit" class="btn btn-outline-danger" name="btn">
+                        </div>
+                    </form>
+                </div>
+
+                <?php
+            }
+        } ?>
+    </div>
+
+
 </body>
 
 </html>

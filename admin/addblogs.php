@@ -44,77 +44,79 @@ if (isset($_POST["btn"])) {
 </head>
 
 <body>
+    <div class="d-flex justify-content-between">
+        <div class=" w-25">
+            <?php
+            include 'sidebar.php';
+            ?>
+        </div>
+        <div class="container my-5  w-75 ">
+            <h2 class="py-4 text-capitalize fw-bold py-5">add blogs</h2>
 
-    <?php
-    include 'sidebar.php';
-    ?>
-
-    <div class="container my-5">
-        <h2 class="py-4 text-capitalize fw-bold py-5">add blogs</h2>
-
-        <form  action="" method="post" enctype="multipart/form-data">
-            <div class="mb-4">
-                <label for="exampleInputEmail1" class="form-label">Blog front image</label>
-                <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    name="blog_front_image">
-            </div>
-            <div class="mb-4">
-                <label for="exampleInputPassword1" class="form-label">Blog heading</label>
-                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="blog heading"
-                    name="blog_heading">
-            </div>
-            <div class="mb-4">
-                <label for="exampleInputPassword1" class="form-label">Blog post date</label>
-                <input type="date" class="form-control" id="exampleInputPassword1" name="blog_date">
-            </div>
-            <div class="mb-4">
-                <label for="exampleInputPassword1" class="form-label">Blog short discription</label>
-                <textarea type="text" class="form-control" id="exampleInputPassword1" placeholder="blog short discription"
-                    name="discription" rows="10"></textarea>
-            </div>
-            <div class="mb-4">
-                <label for="exampleInputPassword1" class="form-label">about the blog</label>
-                <textarea type="text" class="form-control" id="exampleInputPassword1" placeholder="about the blog"
-                    rows="10" name="about_the_blog"></textarea>
-            </div>
-
-
-
-            <div class="mb-4">
-                <label for="exampleInputPassword1" class="form-label">campus location</label>
-                <div class="">
-                    <textarea type="text" class="form-control w-100 mb-4" id="exampleInputPassword1"
-                        placeholder="locationcompresioning 1" name="locationcompresion1" rows="10"></textarea>
-                    <textarea type="text" class="form-control w-100" id="exampleInputPassword1"
-                        placeholder="locationcompresioning 2" name="locationcompresion2" rows="10"></textarea>
+            <form action="" method="post" enctype="multipart/form-data">
+                <div class="mb-4">
+                    <label for="exampleInputEmail1" class="form-label">Blog front image</label>
+                    <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        name="blog_front_image">
                 </div>
-            </div>
-
-            <div class="mb-4">
-                <label for="exampleInputPassword1" class="form-label">history</label>
-                <div class="">
-                    <textarea type="text" class="form-control w-100 mb-4" rows="10" id="exampleInputPassword1"
-                        placeholder="historycompresioning 1" name="historycompresion1"></textarea>
-                    <textarea type="text" class="form-control w-100 mb-4" rows="10" id="exampleInputPassword1"
-                        placeholder="historycompresioning 2" name="historycompresion2"></textarea>
+                <div class="mb-4">
+                    <label for="exampleInputPassword1" class="form-label">Blog heading</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="blog heading"
+                        name="blog_heading">
                 </div>
-            </div>
-
-            <div class="mb-4">
-                <label for="exampleInputPassword1" class="form-label">Placement</label>
-                <div class="">
-                    <textarea type="text" class="form-control w-100 mb-4" rows="10" id="exampleInputPassword1"
-                        placeholder="locationcompresioning 1" name="placementcompresion1"></textarea>
-                    <textarea type="text" class="form-control  mb-4" rows="10" id="exampleInputPassword1"
-                        placeholder="locationcompresioning 2" name="placementcompresion2"></textarea>
+                <div class="mb-4">
+                    <label for="exampleInputPassword1" class="form-label">Blog post date</label>
+                    <input type="date" class="form-control" id="exampleInputPassword1" name="blog_date">
                 </div>
-            </div>
+                <div class="mb-4">
+                    <label for="exampleInputPassword1" class="form-label">Blog short discription</label>
+                    <textarea type="text" class="form-control" id="exampleInputPassword1"
+                        placeholder="blog short discription" name="discription" rows="10"></textarea>
+                </div>
+                <div class="mb-4">
+                    <label for="exampleInputPassword1" class="form-label">about the blog</label>
+                    <textarea type="text" class="form-control" id="exampleInputPassword1" placeholder="about the blog"
+                        rows="10" name="about_the_blog"></textarea>
+                </div>
 
 
 
-            <button type="submit" class="btn btn-danger mt-4" name="btn">Submit</button>
-        </form>
+                <div class="mb-4">
+                    <label for="exampleInputPassword1" class="form-label">campus location</label>
+                    <div class="">
+                        <textarea type="text" class="form-control w-100 mb-4" id="exampleInputPassword1"
+                            placeholder="locationcompresioning 1" name="locationcompresion1" rows="10"></textarea>
+                        <textarea type="text" class="form-control w-100" id="exampleInputPassword1"
+                            placeholder="locationcompresioning 2" name="locationcompresion2" rows="10"></textarea>
+                    </div>
+                </div>
 
+                <div class="mb-4">
+                    <label for="exampleInputPassword1" class="form-label">history</label>
+                    <div class="">
+                        <textarea type="text" class="form-control w-100 mb-4" rows="10" id="exampleInputPassword1"
+                            placeholder="historycompresioning 1" name="historycompresion1"></textarea>
+                        <textarea type="text" class="form-control w-100 mb-4" rows="10" id="exampleInputPassword1"
+                            placeholder="historycompresioning 2" name="historycompresion2"></textarea>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="exampleInputPassword1" class="form-label">Placement</label>
+                    <div class="">
+                        <textarea type="text" class="form-control w-100 mb-4" rows="10" id="exampleInputPassword1"
+                            placeholder="locationcompresioning 1" name="placementcompresion1"></textarea>
+                        <textarea type="text" class="form-control  mb-4" rows="10" id="exampleInputPassword1"
+                            placeholder="locationcompresioning 2" name="placementcompresion2"></textarea>
+                    </div>
+                </div>
+
+
+
+                <button type="submit" class="btn btn-danger mt-4" name="btn">Submit</button>
+            </form>
+
+        </div>
     </div>
 </body>
 

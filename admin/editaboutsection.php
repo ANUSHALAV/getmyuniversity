@@ -44,68 +44,74 @@ if (isset($_POST['btn'])) {
 </head>
 
 <body>
-    <?php
-    include 'sidebar.php';
-    ?>
-    <div class="container">
-        <div class="row py-4 text-capitalize">
-            <div class="col-12 my-5">
-                <h2 class=" fw-bold">edit about section</h2>
-            </div>
-            <form method="post" enctype="multipart/form-data">
-                <?php
-                $conn = mysqli_connect('localhost', 'root', '', 'collegs');
+    <div class="d-flex justify-content-between">
+        <div class="w-25">
+            <?php
+            include 'sidebar.php';
+            ?>
+        </div>
 
-                $query = "SELECT * FROM `about`";
+        <div class="container w-75">
+            <div class="row py-4 text-capitalize">
+                <div class="col-12 my-5">
+                    <h2 class=" fw-bold">edit about section</h2>
+                </div>
+                <form method="post" enctype="multipart/form-data">
+                    <?php
+                    $conn = mysqli_connect('localhost', 'root', '', 'collegs');
 
-                $result = mysqli_query($conn, $query);
+                    $query = "SELECT * FROM `about`";
 
-                if (mysqli_num_rows($result) > 0) {
-                    while ($row = mysqli_fetch_array($result)) { ?>
+                    $result = mysqli_query($conn, $query);
 
-
-                        <div class="mb-5">
-                            <label for="exampleInputEmail1" class="form-label">company name</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                                placeholder="company name" name="company_name" value="<?php echo $row['company_name'] ?>">
-                        </div>
-                        <div class="mb-5">
-                            <label for="exampleInputPassword1" class="form-label">about the company</label>
-                            <textarea type="text" class="form-control" id="exampleInputPassword1"
-                                placeholder="about the company" name="about_the_company"
-                                rows="8"><?php echo $row['about_the_company'] ?></textarea>
-                        </div>
-                        <div class="mb-5">
-                            <label for="exampleInputPassword1" class="form-label">about section image</label>
-                            <input type="file" class="form-control" id="exampleInputPassword1" name="about_section_image">
-                        </div>
-
-                        <div class="mb-5">
-                            <label for="exampleInputPassword1" class="form-label">company key points</label>
-                            <input type="text" class="form-control mb-3" id="exampleInputPassword1" placeholder="point 1"
-                                name="keypoint1" value="<?php echo $row['key_point1'] ?>">
-                            <input type="text" class="form-control mb-3" id="exampleInputPassword1" placeholder="point 2"
-                                name="keypoint2" value="<?php echo $row['key_point2'] ?>">
-                            <input type="text" class="form-control mb-3" id="exampleInputPassword1" placeholder="point 3"
-                                name="keypoint3" value="<?php echo $row['key_point3'] ?>">
-                            <input type="text" class="form-control mb-3" id="exampleInputPassword1" placeholder="point 4"
-                                name="keypoint4" value="<?php echo $row['key_point4'] ?>">
-                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="point 5"
-                                name="keypoint5" value="<?php echo $row['key_point5'] ?>">
-
-                        </div>
+                    if (mysqli_num_rows($result) > 0) {
+                        while ($row = mysqli_fetch_array($result)) { ?>
 
 
+                            <div class="mb-5">
+                                <label for="exampleInputEmail1" class="form-label">company name</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                    placeholder="company name" name="company_name" value="<?php echo $row['company_name'] ?>">
+                            </div>
+                            <div class="mb-5">
+                                <label for="exampleInputPassword1" class="form-label">about the company</label>
+                                <textarea type="text" class="form-control" id="exampleInputPassword1"
+                                    placeholder="about the company" name="about_the_company"
+                                    rows="8"><?php echo $row['about_the_company'] ?></textarea>
+                            </div>
+                            <div class="mb-5">
+                                <label for="exampleInputPassword1" class="form-label">about section image</label>
+                                <input type="file" class="form-control" id="exampleInputPassword1" name="about_section_image">
+                            </div>
 
-                        <button type="submit" class="btn btn-danger" name="btn">Submit</button>
-                        <?php
+                            <div class="mb-5">
+                                <label for="exampleInputPassword1" class="form-label">company key points</label>
+                                <input type="text" class="form-control mb-3" id="exampleInputPassword1" placeholder="point 1"
+                                    name="keypoint1" value="<?php echo $row['key_point1'] ?>">
+                                <input type="text" class="form-control mb-3" id="exampleInputPassword1" placeholder="point 2"
+                                    name="keypoint2" value="<?php echo $row['key_point2'] ?>">
+                                <input type="text" class="form-control mb-3" id="exampleInputPassword1" placeholder="point 3"
+                                    name="keypoint3" value="<?php echo $row['key_point3'] ?>">
+                                <input type="text" class="form-control mb-3" id="exampleInputPassword1" placeholder="point 4"
+                                    name="keypoint4" value="<?php echo $row['key_point4'] ?>">
+                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="point 5"
+                                    name="keypoint5" value="<?php echo $row['key_point5'] ?>">
+
+                            </div>
+
+
+
+                            <button type="submit" class="btn btn-danger" name="btn">Submit</button>
+                            <?php
+                        }
                     }
-                }
-                ?>
-            </form>
+                    ?>
+                </form>
 
+            </div>
         </div>
     </div>
+
 </body>
 
 </html>

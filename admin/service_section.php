@@ -37,79 +37,83 @@ if (isset($_POST["btn"])) {
 
 <body>
 
-    <?php
-    include 'sidebar.php';
-    ?>
+    <div class="d-flex justify-content-between">
+        <div class="w-25">
+            <?php
+            include 'sidebar.php';
+            ?>
+        </div>
+        <div class="container my-4 w-75">
+            <h3 class="fw-bold text-capitalize py-4">service section update image</h3>
 
-    <div class="container my-4">
-        <h3 class="fw-bold text-capitalize py-4">service section update image</h3>
-
-        <form action="" enctype="multipart/form-data" method="post">
-            <div class="mb-4">
-                <?php
-                $conn = mysqli_connect("localhost", "root", "", "collegs");
-                $query = "SELECT * FROM `service_section_image` WHERE `id`=1";
-
-                $result = mysqli_query($conn, $query);
-
-                if (mysqli_num_rows($result) > 0) {
-                    while ($row = mysqli_fetch_assoc($result)) { ?>
-
-
-                        <label for="exampleFormControlInput1" class="form-label">service section image</label>
-                        <input type="file" class="form-control" id="exampleFormControlInput1" name="service_section_image">
-                        <div>
-                            <img src="data:image/jpeg;base64,<?php echo base64_encode($row['service_section_img']); ?>" alt=""
-                                height="60px" width="50px">
-                        </div>
-                    </div>
-
-                    <div class="mb-3">
-                        <input type="submit" class="btn btn-outline-danger" name="btn">
-                    </div>
+            <form action="" enctype="multipart/form-data" method="post">
+                <div class="mb-4">
                     <?php
+                    $conn = mysqli_connect("localhost", "root", "", "collegs");
+                    $query = "SELECT * FROM `service_section_image` WHERE `id`=1";
+
+                    $result = mysqli_query($conn, $query);
+
+                    if (mysqli_num_rows($result) > 0) {
+                        while ($row = mysqli_fetch_assoc($result)) { ?>
+
+
+                            <label for="exampleFormControlInput1" class="form-label">service section image</label>
+                            <input type="file" class="form-control" id="exampleFormControlInput1" name="service_section_image">
+                            <div>
+                                <img src="data:image/jpeg;base64,<?php echo base64_encode($row['service_section_img']); ?>"
+                                    alt="" height="60px" width="50px">
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="submit" class="btn btn-outline-danger" name="btn">
+                        </div>
+                        <?php
+                        }
+                    } ?>
+            </form>
+
+            <table class="table text-capitalize mt-5">
+                <thead>
+                    <tr>
+                        <th scope="col">id</th>
+                        <th scope="col">service section image</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    $conn = mysqli_connect('localhost', 'root', '', 'collegs');
+
+
+
+                    $query = "SELECT * FROM `service_section_image`";
+
+                    $result = mysqli_query($conn, $query);
+
+                    if (mysqli_num_rows($result) > 0) {
+
+                        while ($row = mysqli_fetch_array($result)) {
+                            ?>
+
+                            <tr>
+                                <td>
+                                    <?php echo $row['id']; ?>
+                                </td>
+                                <td>
+                                    <img width="70px" height="60px"
+                                        src="data:image/jpeg;base64,<?php echo base64_encode($row['service_section_img']); ?>">
+                                </td>
+                            </tr>
+                        <?php }
                     }
-                } ?>
-        </form>
+                    ?>
 
-        <table class="table text-capitalize mt-5">
-            <thead>
-                <tr>
-                    <th scope="col">id</th>
-                    <th scope="col">service section image</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php
-                $conn = mysqli_connect('localhost', 'root', '', 'collegs');
-
-
-
-                $query = "SELECT * FROM `service_section_image`";
-
-                $result = mysqli_query($conn, $query);
-
-                if (mysqli_num_rows($result) > 0) {
-
-                    while ($row = mysqli_fetch_array($result)) {
-                        ?>
-
-                        <tr>
-                            <td>
-                                <?php echo $row['id']; ?>
-                            </td>
-                            <td>
-                                <img width="70px" height="60px"
-                                    src="data:image/jpeg;base64,<?php echo base64_encode($row['service_section_img']); ?>">
-                            </td>
-                        </tr>
-                    <?php }
-                }
-                ?>
-
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </div>
     </div>
+
 
 
 

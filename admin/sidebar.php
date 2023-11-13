@@ -14,7 +14,7 @@
 
     .sidenav {
       height: 100%;
-      width: 350px;
+      width:22%;
       position: fixed;
       z-index: 1;
       top: 0;
@@ -25,9 +25,9 @@
     }
 
     .sidenav a {
-      padding: 6px 8px 6px 16px;
+      padding: 6px 8px 6px 5px;
       text-decoration: none;
-      font-size: 25px;
+      font-size:19px;
       color: #818181;
       display: block;
     }

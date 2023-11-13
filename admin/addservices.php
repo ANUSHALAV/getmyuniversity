@@ -35,32 +35,36 @@ if (isset($_POST["btn"])) {
 
 <body>
 
-    <?php
-    include 'sidebar.php';
-    ?>
+    <div class="d-flex justify-content-between w-100">
+        <div class="w-25">
+            <?php
+            include 'sidebar.php';
+            ?>
+        </div>
 
-    <div class="container my-4">
-        <h3 class="fw-bold text-capitalize py-4">add services</h3>
+        <div class="container my-4 w-75">
+            <h3 class="fw-bold text-capitalize py-4">add services</h3>
 
-        <form action="" enctype="multipart/form-data" method="post">
+            <form action="" enctype="multipart/form-data" method="post">
 
-            <div class="mb-4">
-                <label for="exampleFormControlInput1" class="form-label">service name</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" name="service_name">
-            </div>
-            <div class="mb-4">
-                <label for="exampleFormControlInput1" class="form-label">service discription</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" name="service_discription">
-            </div>
-            <div class="mb-4">
-                <label for="exampleFormControlInput1" class="form-label">service image</label>
-                <input type="file" class="form-control" id="exampleFormControlInput1" name="service_image">
-            </div>
+                <div class="mb-4">
+                    <label for="exampleFormControlInput1" class="form-label">service name</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" name="service_name">
+                </div>
+                <div class="mb-4">
+                    <label for="exampleFormControlInput1" class="form-label">service discription</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" name="service_discription">
+                </div>
+                <div class="mb-4">
+                    <label for="exampleFormControlInput1" class="form-label">service image</label>
+                    <input type="file" class="form-control" id="exampleFormControlInput1" name="service_image">
+                </div>
 
-            <div class="mb-3">
-                <input type="submit" class="btn btn-outline-danger" name="btn">
-            </div>
-        </form>
+                <div class="mb-3">
+                    <input type="submit" class="btn btn-outline-danger" name="btn">
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 

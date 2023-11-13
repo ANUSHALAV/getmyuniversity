@@ -7,7 +7,7 @@ if (isset($_POST['btn'])) {
     $heading = $_POST['video_heading'];
     $video_link = $_POST['video_link'];
     $video_related_on = $_POST['video_related_on'];
-    $video_post_date=$_POST['video_post_date'];
+    $video_post_date = $_POST['video_post_date'];
     $thumbnail_img = $_FILES['thumbnail_img']['tmp_name'];
 
     $imageData = file_get_contents($thumbnail_img);
@@ -36,12 +36,15 @@ if (isset($_POST['btn'])) {
 </head>
 
 <body>
-    <?php
-    include 'sidebar.php';
-    ?>
+   <div class="d-flex justify-content-between">
+   <div class="w-25">
+        <?php
+        include 'sidebar.php';
+        ?>
+    </div>
 
 
-    <div class="container my-5">
+    <div class="container my-5 w-75">
         <h2 class="fw-bold text-capitalize py-5">add university videos</h2>
 
         <form action="" method="POST" enctype="multipart/form-data">
@@ -77,6 +80,7 @@ if (isset($_POST['btn'])) {
             <button type="submit" class="btn btn-danger" name="btn">Submit</button>
         </form>
     </div>
+   </div>
 </body>
 
 </html>

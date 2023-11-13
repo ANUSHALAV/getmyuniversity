@@ -173,7 +173,7 @@
                                 </ul>
                             </li>
                             <li class="dropdown_item nav-item">
-                                <a class="nav-link" href="videos.html">Abroad <i class="fa fa-angle-down"
+                                <a class="nav-link" href="#">Abroad <i class="fa fa-angle-down"
                                         aria-hidden="true"></i></a>
                                 <span class="drop_btn" data-id="dropdown5"><i class="fa fa-angle-down"></i></span>
                                 <ul class="dropdown-menu" id="dropdown5">
