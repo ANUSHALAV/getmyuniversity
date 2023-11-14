@@ -35,7 +35,7 @@
 
 <body>
     <?php
-    include "./Components/Navbar.php";
+    include "Components/Navbar.php";
     ?>
     <section class="country_banner innerSlide">
         <div class="bg_img"><img src="images/event-img3.jpg" width="1907" height="513"

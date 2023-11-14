@@ -127,7 +127,7 @@
                     alert("please enter the university name");
                     return false;
                 }
-                window.location.href = "http://localhost/collegs/public/full_college_detail.php?college_name=" + inputData;
+                window.location.href = "http://localhost/collegs/full_college_detail.php?college_name=" + inputData;
                 $(".clearfix").trigger("reset");
 
             });
@@ -141,7 +141,7 @@
                     return false;
                 }
 
-               window.location.href="http://localhost/collegs/public/universitybystateandcourse.php?courseName="+course+"&stateName="+state;
+               window.location.href="http://localhost/collegs/universitybystateandcourse.php?courseName="+course+"&stateName="+state;
 
                 $(".clearfix").trigger("reset");
             });

@@ -120,23 +120,23 @@
                                         aria-hidden="true"></i></a>
                                 <span class="drop_btn" data-id="dropdown5"><i class="fa fa-angle-down"></i></span>
                                 <ul class="dropdown-menu" id="dropdown5">
-                                    <li class="nav-item"><a
-                                            href="public\mbbs-colleges.php?course_name=<?php echo 'MD' ?>">MD in
+                                    <li class="nav-item"><a href="mbbs-colleges.php?course_name=<?php echo 'MD' ?>">MD
+                                            in
+                                            India</a></li>
+                                    <li class="nav-item"><a href="mbbs-colleges.php?course_name=<?php echo 'MS' ?>">MS
+                                            in
+                                            India</a></li>
+                                    <li class="nav-item"><a href="mbbs-colleges.php?course_name=<?php echo 'DM' ?>">DM
+                                            in
+                                            India</a></li>
+                                    <li class="nav-item"><a href="mbbs-colleges.php?course_name=<?php echo 'MCH' ?>">MCH
+                                            in
+                                            India</a></li>
+                                    <li class="nav-item"><a href="mbbs-colleges.php?course_name=<?php echo 'DIP' ?>">DIP
+                                            in
                                             India</a></li>
                                     <li class="nav-item"><a
-                                            href="public\mbbs-colleges.php?course_name=<?php echo 'MS' ?>">MS in
-                                            India</a></li>
-                                    <li class="nav-item"><a
-                                            href="public\mbbs-colleges.php?course_name=<?php echo 'DM' ?>">DM in
-                                            India</a></li>
-                                    <li class="nav-item"><a
-                                            href="public\mbbs-colleges.php?course_name=<?php echo 'MCH' ?>">MCH in
-                                            India</a></li>
-                                    <li class="nav-item"><a
-                                            href="public\mbbs-colleges.php?course_name=<?php echo 'DIP' ?>">DIP in
-                                            India</a></li>
-                                    <li class="nav-item"><a
-                                            href="public\mbbs-colleges.php?course_name=<?php echo 'MBBS' ?>">MBBS in
+                                            href="mbbs-colleges.php?course_name=<?php echo 'MBBS' ?>">MBBS in
                                             India</a></li>
                                 </ul>
                             </li>
@@ -160,7 +160,7 @@
                                                 while ($row = mysqli_fetch_array($result)) { ?>
 
                                                     <li class="nav-item"><a class="statelink"
-                                                            href="public\medical-college-detail.php?state=<?php echo $row['state']; ?>">
+                                                            href="medical-college-detail.php?state=<?php echo $row['state']; ?>">
                                                             <?php echo $row['state']; ?>
                                                         </a>
                                                     </li>
@@ -191,7 +191,7 @@
                                         while ($row = mysqli_fetch_array($result)) { ?>
 
                                             <li class="nav-item"><a
-                                                    href="abroad/mbbs-in-abrod.php?country_name=<?php echo $row['Country_name'] ?>">MBBS
+                                                    href="mbbs-in-abrod.php?country_name=<?php echo $row['Country_name'] ?>">MBBS
                                                     in
                                                     <?php echo $row['Country_name']; ?>
                                                 </a></li>
@@ -225,7 +225,8 @@
                                             href="medical-college-review.php?review=<?php echo 'mbbs abroad' ?>">MBBS
                                             Abroad</a></li>
                                     <li class="nav-item"><a
-                                            href="medical-college-review.php?review=<?php echo 'neet ug 2023 updates' ?>">NEET UG
+                                            href="medical-college-review.php?review=<?php echo 'neet ug 2023 updates' ?>">NEET
+                                            UG
                                             2023
                                             Updates</a></li>
                                 </ul>

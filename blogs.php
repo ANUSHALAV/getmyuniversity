@@ -54,7 +54,7 @@
 
 <body>
     <?php
-    include "./Components/Navbar.php";
+    include "Components/Navbar.php";
     ?>
 
     <div class="post_wrapper pt-5">
